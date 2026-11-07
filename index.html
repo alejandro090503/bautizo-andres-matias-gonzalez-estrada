@@ -2986,6 +2986,18 @@ section#rsvp{
 .el-credit{transition:none!important}
 .main-wrap{overflow-x:clip}
 #footer{padding-bottom:120px!important}
+/* portada: marco de tinta con el centro descubierto · solo el nombre */
+.hero-drift{background:#fff url(ink/ink-oval.webp) center/cover no-repeat;animation-name:heroDriftOval}
+@keyframes heroDriftOval{0%{transform:translate3d(-1%,-.8%,0) scale(1.03)}100%{transform:translate3d(1.2%,1%,0) scale(1.09)}}
+.hero-bg{inset:-6% 0}
+#hero{justify-content:center;padding-bottom:48px}
+#hero .h-we,#hero .h-div,#hero .h-date-wrap,#hero .h-wave,#hero .h-rings{display:none}
+#hero .h-ov{display:none}
+#hero .hero-vig{background:radial-gradient(120% 90% at 50% 50%,rgba(0,0,0,0) 62%,rgba(58,65,42,.10) 100%)}
+#hero .gline{margin-top:24px!important}
+/* vinilo: solo disco y aguja */
+#music-btn .vinyl-icons{display:none!important}
+#hero .hero-glow{opacity:.45}
 
   </style>
 </head>
