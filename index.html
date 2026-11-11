@@ -2987,7 +2987,7 @@ section#rsvp{
 .main-wrap{overflow-x:clip}
 #footer{padding-bottom:120px!important}
 /* portada: marco de tinta con el centro descubierto · solo el nombre */
-.hero-drift{background:#FAF7EC url(assets/fotos/hero.jpg) 50% 0/118% auto no-repeat;animation-name:heroDriftFoto;transform-origin:50% 20%}
+.hero-drift{background:#2C3125 url(assets/fotos/hero.jpg) 50% 4%/cover no-repeat;animation-name:heroDriftFoto;transform-origin:50% 22%}
 @keyframes heroDriftFoto{0%{transform:translate3d(-2%,0,0) scale(1.04)}50%{transform:translate3d(1.5%,1%,0) scale(1.1)}100%{transform:translate3d(3%,2%,0) scale(1.16)}}
 @keyframes heroDriftOval{0%{transform:translate3d(-1%,-.8%,0) scale(1.03)}100%{transform:translate3d(1.2%,1%,0) scale(1.09)}}
 .hero-bg{inset:0 0 -14% 0}
@@ -3033,7 +3033,7 @@ section#rsvp{
   -webkit-mask-image:radial-gradient(circle,#000 58%,transparent 72%);mask-image:radial-gradient(circle,#000 58%,transparent 72%);
   animation:levitate 6.5s ease-in-out infinite}
 /* portada: velo claro solo en la franja baja, detrás del nombre */
-#hero .h-ov{background:linear-gradient(to bottom,rgba(250,247,236,0) 0%,rgba(250,247,236,0) 40%,rgba(250,247,236,.55) 50%,rgba(250,247,236,.9) 58%,#FAF7EC 66%,#FAF7EC 100%)!important}
+#hero .h-ov{background:linear-gradient(to bottom,rgba(24,28,19,.18) 0%,rgba(24,28,19,0) 16%,rgba(24,28,19,0) 46%,rgba(24,28,19,.38) 62%,rgba(24,28,19,.66) 80%,rgba(24,28,19,.78) 100%)!important}
 #dresscode .ink-bg.bgn > i{opacity:.5}
 #hero .h-ov::after{display:none}
 #hero .hero-glow{opacity:.8}
@@ -3048,6 +3048,39 @@ section#rsvp{
 #footer .el-sep,#footer .gline{background:linear-gradient(90deg,transparent,#B3A46E,transparent)}
 #footer .ft-nms.foil-text{background-image:linear-gradient(100deg,#B3A46E 0%,#D9CFA6 26%,#FFFBEA 50%,#D9CFA6 74%,#B3A46E 100%)}
 #footer .sec-wave path{stroke:rgba(217,207,166,.35)}
+
+/* ═════ PORTADA · foto completa + nombre con brillo dorado ═════ */
+.hero-bg{inset:-4% 0 -14% 0!important}
+#hero .hero-glow{opacity:.55}
+#hero .hero-vig{background:radial-gradient(120% 95% at 50% 38%,rgba(0,0,0,0) 55%,rgba(18,21,14,.38) 100%)}
+#hero .h-frame{border-color:rgba(232,215,170,.38)}
+#hero .h-frame::before,#hero .h-frame::after{background:transparent;color:#E8D7AA}
+#hero .h-name.foil-text,#hero .h-amp.foil-text{
+  background-image:linear-gradient(100deg,#B8955A 0%,#E9D49B 22%,#FFF8E2 46%,#FFFDF4 50%,#F1DFAE 58%,#C9A96A 80%,#A9874D 100%)!important;
+  background-size:240% 100%!important;animation:goldSweep 6s ease-in-out infinite!important}
+#hero .h-name{font-weight:600;letter-spacing:6px}
+#hero .h-clip,#hero .h-amp-clip{filter:drop-shadow(0 2px 3px rgba(20,22,14,.55)) drop-shadow(0 0 18px rgba(233,212,155,.35))}
+#hero .h-name-wind-line{background:linear-gradient(to right,transparent,rgba(233,212,155,.8),transparent)}
+#hero .gline{background:linear-gradient(90deg,transparent,#E9D49B,transparent)!important;opacity:.9}
+#hero .h-ripple::before,#hero .h-ripple::after{border-color:rgba(233,212,155,.5)}
+#hero .h-scroll span{color:#F3E7C6!important;opacity:.9}
+#hero .h-scroll-line{background:linear-gradient(to bottom,#E9D49B,transparent)}
+@media (prefers-reduced-motion:reduce){#hero .h-name.foil-text,#hero .h-amp.foil-text{animation:none!important}}
+
+/* ═════ FONDOS: poco zoom, movimiento sutil, detalles (cruces, palomas) visibles ═════ */
+.ink-bg.bgn{inset:-3% !important;z-index:-1!important;
+  -webkit-mask-image:linear-gradient(transparent 0,#000 70px,#000 calc(100% - 70px),transparent)!important;
+          mask-image:linear-gradient(transparent 0,#000 70px,#000 calc(100% - 70px),transparent)!important}
+.sf{z-index:-2!important}
+.ink-bg.bgn > i{inset:0;background-size:cover;background-position:center;
+  animation:bgSoft 26s ease-in-out infinite alternate!important;will-change:auto}
+.ink-bg.bgn.ink-b > i{animation-name:bgSoftB!important;animation-delay:-9s!important}
+.ink-bg.bgn.ink-c > i{animation-delay:-15s!important}
+.ink-bg.bgn.ink-d > i{animation-name:bgSoftB!important;animation-delay:-4s!important}
+@keyframes bgSoft{0%{transform:translate3d(0,0,0) scale(1.01) rotate(0deg)}100%{transform:translate3d(-1%,-.6%,0) scale(1.04) rotate(.3deg)}}
+@keyframes bgSoftB{0%{transform:translate3d(.8%,0,0) scale(1.04) rotate(.2deg)}100%{transform:translate3d(-.6%,.6%,0) scale(1.01) rotate(-.2deg)}}
+#location .ink-bg.bgn > i,#itinerary .ink-bg.bgn > i,#padrinos .ink-bg.bgn > i,#rsvp .ink-bg.bgn > i,#dresscode .ink-bg.bgn > i,#footer .ink-bg.bgn > i{background-position:center top}
+@media (prefers-reduced-motion:reduce){.ink-bg.bgn > i{animation:none!important}}
   </style>
 </head>
 <body>
@@ -4626,7 +4659,7 @@ function showNav(){
 function initSectionFades(){
   var secs = Array.prototype.slice.call(document.querySelectorAll('.main-wrap > section, .main-wrap > footer'));
   var page = 'rgb(255,255,255)';
-  var SET = { hero: { bot: '#FAF7EC' }, invite: { top: '#FAF7EC', bot: '#F6F2EC' }, countdown: { top: '#FAF7EC', bot: '#F0ECDA' },
+  var SET = { hero: { bot: '#2C3125' }, invite: { top: '#FAF7EC', bot: '#F6F2EC' }, countdown: { top: '#FAF7EC', bot: '#F0ECDA' },
               itinerary: { top: '#FFFFFF', bot: '#FFFFFF' }, footer: { top: '#1F241A', bot: '#1F241A' } };
   function rgb(c){
     if (!c) return null;
@@ -4653,10 +4686,10 @@ function initSectionFades(){
     var A = secs[i], B = secs[i + 1];
     var a = edge(A, 'bot'), b = edge(B, 'top');
     var mid = [0, 1, 2].map(function(k){ return Math.round((a[k] + b[k]) / 2); });
-    var h = A.id === 'hero' ? 90 : 170;
+    var h = A.id === 'hero' ? 150 : 170;
     A.classList.add('sf-host'); B.classList.add('sf-host');
     layer(A, 'sf-bot', mid, 'to top', h);
-    layer(B, 'sf-top', mid, 'to bottom', A.id === 'hero' ? 90 : 170);
+    layer(B, 'sf-top', mid, 'to bottom', 170);
   }
 }
 
@@ -4879,7 +4912,7 @@ function confeti(){
 
     var RM = !!window.__RM || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
     var STEP = 360 / n;
-    var AUTO = RM ? 0 : 0.14;          /* grados por frame a 60fps (~8.4°/s) */
+    var AUTO = RM ? 0 : 0.1;           /* grados por frame a 60fps (~6°/s, una vuelta por minuto) */
     var dir = -1;                      /* sentido del giro automático; sigue al último lanzamiento */
     var rot = 0, vel = AUTO * dir, radius = 160, cardH = 186;
     var dragging = false, moved = false, pid = null, startX = 0, startY = 0, startRot = 0, samples = [];
@@ -4970,13 +5003,9 @@ function confeti(){
 
     /* ── pausa fuera de pantalla ── */
     var sec = document.getElementById('gallery') || stage;
-    if (window.ScrollTrigger) {
-      ScrollTrigger.create({ trigger: sec, start: 'top bottom', end: 'bottom top',
-        onToggle: function(self){ onScreen = self.isActive; run(); } });
-      onScreen = ScrollTrigger.isInViewport ? ScrollTrigger.isInViewport(sec) : true;
-    } else if ('IntersectionObserver' in window) {
-      new IntersectionObserver(function(en){ onScreen = en[0].isIntersecting; run(); }).observe(sec);
-    }
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function(en){ onScreen = en[0].isIntersecting; run(); }, { rootMargin: '120px 0px' }).observe(sec);
+    } else { onScreen = true; }
     document.addEventListener('visibilitychange', run);
 
     var rz;
