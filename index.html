@@ -2987,12 +2987,13 @@ section#rsvp{
 .main-wrap{overflow-x:clip}
 #footer{padding-bottom:120px!important}
 /* portada: marco de tinta con el centro descubierto · solo el nombre */
-.hero-drift{background:#fff url(ink/ink-oval.webp) center/cover no-repeat;animation-name:heroDriftOval}
+.hero-drift{background:#FAF7EC url(assets/fotos/hero.jpg) 50% 0/118% auto no-repeat;animation-name:heroDriftFoto;transform-origin:50% 20%}
+@keyframes heroDriftFoto{0%{transform:translate3d(-2%,0,0) scale(1.04)}50%{transform:translate3d(1.5%,1%,0) scale(1.1)}100%{transform:translate3d(3%,2%,0) scale(1.16)}}
 @keyframes heroDriftOval{0%{transform:translate3d(-1%,-.8%,0) scale(1.03)}100%{transform:translate3d(1.2%,1%,0) scale(1.09)}}
-.hero-bg{inset:-6% 0}
-#hero{justify-content:center;padding-bottom:48px}
+.hero-bg{inset:0 0 -14% 0}
+#hero{justify-content:flex-end;padding-bottom:110px}
 #hero .h-we,#hero .h-div,#hero .h-date-wrap,#hero .h-wave,#hero .h-rings{display:none}
-#hero .h-ov{display:none}
+#hero .h-ov{display:block}
 #hero .hero-vig{background:radial-gradient(120% 90% at 50% 50%,rgba(0,0,0,0) 62%,rgba(58,65,42,.10) 100%)}
 #hero .gline{margin-top:24px!important}
 /* vinilo: solo disco y aguja */
@@ -3023,6 +3024,30 @@ section#rsvp{
 .dcx-empty{display:inline-block;margin-top:12px;padding:9px 20px;border:1px solid rgba(179,164,110,.6);border-radius:999px;
   font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:18px;color:#4F5740;background:rgba(255,255,255,.7)}
 @media (prefers-reduced-motion:reduce){.dcx-sw,.dcx-glow,.dcx-ball::after{animation:none!important}}
+
+/* ═════ FONDOS GENERADOS (Gemini) · portada con foto · pie oscuro ═════ */
+.ink-bg.bgn > i{background-size:cover;background-position:center;opacity:1;mix-blend-mode:normal}
+#gallery.ink-host{overflow:hidden}
+#countdown.ink-host,#gallery.ink-host{position:relative;isolation:isolate}
+.pad-emblema{display:block;width:118px;height:118px;margin:4px auto 6px;border-radius:50%;
+  -webkit-mask-image:radial-gradient(circle,#000 58%,transparent 72%);mask-image:radial-gradient(circle,#000 58%,transparent 72%);
+  animation:levitate 6.5s ease-in-out infinite}
+/* portada: velo claro solo en la franja baja, detrás del nombre */
+#hero .h-ov{background:linear-gradient(to bottom,rgba(250,247,236,0) 0%,rgba(250,247,236,0) 40%,rgba(250,247,236,.55) 50%,rgba(250,247,236,.9) 58%,#FAF7EC 66%,#FAF7EC 100%)!important}
+#dresscode .ink-bg.bgn > i{opacity:.5}
+#hero .h-ov::after{display:none}
+#hero .hero-glow{opacity:.8}
+#hero .hero-vig{background:radial-gradient(120% 90% at 50% 40%,rgba(0,0,0,0) 58%,rgba(30,34,22,.22) 100%)}
+#hero .h-frame{border-color:rgba(255,255,255,.45)}
+/* pie oscuro */
+#footer{background:#1F241A!important;border-top:0}
+#footer .ink-bg.bgn{-webkit-mask-image:linear-gradient(transparent 0,#000 120px,#000 100%);mask-image:linear-gradient(transparent 0,#000 120px,#000 100%)}
+#footer .ft-dt,#footer .ft-note{color:#EDE6CF!important;opacity:.92!important}
+#footer .ft-orn{color:#D9CFA6}
+#footer .el-credit{color:#D9CFA6!important;opacity:.9}
+#footer .el-sep,#footer .gline{background:linear-gradient(90deg,transparent,#B3A46E,transparent)}
+#footer .ft-nms.foil-text{background-image:linear-gradient(100deg,#B3A46E 0%,#D9CFA6 26%,#FFFBEA 50%,#D9CFA6 74%,#B3A46E 100%)}
+#footer .sec-wave path{stroke:rgba(217,207,166,.35)}
   </style>
 </head>
 <body>
@@ -3170,7 +3195,7 @@ section#rsvp{
 
 <!-- ═══════════════ INVITACIÓN FAMILIAR ═══════════════ -->
 <section id="invite" class="ink-host">
-  <div class="ink-bg ink-hero ink-a" aria-hidden="true"><i></i></div>
+  <div class="ink-bg bgn ink-a" aria-hidden="true"><i style="background-image:url(bg/invite.webp)"></i></div>
   <div class="inv-wrap">
     <span class="inv-orn" aria-hidden="true">✦ · ✦</span>
     <p class="inv-lead">Con la bendición de Dios y el amor de mi familia</p>
@@ -3185,7 +3210,7 @@ section#rsvp{
 
 <!-- ═══════════════ UBICACIÓN (debajo del hero) ═══════════════ -->
 <section id="location" data-nav="Lugares" class="ink-host">
-  <div class="ink-bg ink-corner ink-b" aria-hidden="true"><i></i></div>
+  <div class="ink-bg bgn ink-b" aria-hidden="true"><i style="background-image:url(bg/location.webp)"></i></div>
   <span class="lbl">¿Dónde y cuándo?</span>
   <h2 class="ttl">La Celebración</h2>
   <div class="gline"></div>
@@ -3247,7 +3272,8 @@ section#rsvp{
 
 
 <!-- ═══════════════ 2. CUENTA REGRESIVA ══════════════ -->
-<section id="countdown" data-nav="Cuenta regresiva">
+<section id="countdown" data-nav="Cuenta regresiva" class="ink-host">
+  <div class="ink-bg bgn ink-b" aria-hidden="true"><i style="background-image:url(bg/countdown.webp)"></i></div>
   <!-- ondas decorativas superiores -->
   <div class="cd-wave-top" aria-hidden="true">
     <svg viewBox="0 0 800 50" preserveAspectRatio="none">
@@ -3312,7 +3338,7 @@ section#rsvp{
 
 <!-- ═══════════════ 5. ITINERARIO ════════════════════ -->
 <section id="itinerary" data-nav="Itinerario" class="ink-host">
-  <div class="ink-bg ink-top ink-c flip" aria-hidden="true"><i></i></div>
+  <div class="ink-bg bgn ink-c" aria-hidden="true"><i style="background-image:url(bg/itinerary.webp)"></i></div>
   <span class="lbl">Un día para celebrar</span>
   <h2 class="ttl">Itinerario</h2>
   <div class="gline"></div>
@@ -3338,10 +3364,11 @@ section#rsvp{
 
 <!-- ═══════════════ 6. PADRINOS ══════════════════════ -->
 <section id="padrinos" data-nav="Familia" class="ink-host">
-  <div class="ink-bg ink-hero ink-d flip vflip" aria-hidden="true"><i></i></div>
+  <div class="ink-bg bgn ink-d" aria-hidden="true"><i style="background-image:url(bg/family.webp)"></i></div>
   <span class="lbl">Con la bendición de</span>
   <h2 class="ttl">Mi Familia</h2>
   <div class="gline"></div>
+  <img class="pad-emblema" src="bg/emblema.webp" alt="" width="240" height="240" aria-hidden="true">
   <p class="pad-intro">Quienes me guían y acompañan<br>en este día tan especial.</p>
 
   <div class="pad-list">
@@ -3362,7 +3389,7 @@ section#rsvp{
 
 <!-- ═══════════════ 7. MESA DE REGALOS ═══════════════ -->
 <section id="gifts" class="ink-host ls" data-nav="Regalos">
-  <div class="ink-bg ink-oval ink-a" aria-hidden="true"><i></i></div>
+  <div class="ink-bg bgn ink-a" aria-hidden="true"><i style="background-image:url(bg/gifts.webp)"></i></div>
   <span class="lbl">Tu presencia es mi mejor regalo</span>
   <h2 class="ttl">Mesa de Regalos</h2>
   <div class="gline"></div>
@@ -3426,7 +3453,7 @@ section#rsvp{
 
 <!-- ═══════════════ 8. ÁLBUM COMPARTIDO ══════════════ -->
 <section id="album" data-nav="Álbum" class="ink-host">
-  <div class="ink-bg ink-corner ink-c flip vflip" aria-hidden="true"><i></i></div>
+  <div class="ink-bg bgn ink-c" aria-hidden="true"><i style="background-image:url(bg/album.webp)"></i></div>
   <span class="lbl">Captura cada momento</span>
   <h2 class="ttl">Álbum de fotos</h2>
   <div class="gline"></div>
@@ -3463,7 +3490,7 @@ section#rsvp{
 
 <!-- ═══════════════ 9. DRESS CODE ════════════════════ -->
 <section id="dresscode" class="ink-host dc2" data-nav="Vestimenta">
-  <div class="ink-bg ink-top ink-b vflip" aria-hidden="true"><i></i></div>
+  <div class="ink-bg bgn ink-b" aria-hidden="true"><i style="background-image:url(bg/dress.webp)"></i></div>
   <span class="lbl">Vestimenta</span>
   <h2 class="ttl">Código de Vestimenta</h2>
   <div class="gline"></div>
@@ -3515,7 +3542,8 @@ section#rsvp{
 
 
 <!-- ═══════════════ 11. GALERÍA · RUEDA 3D ═══════════════ -->
-<section id="gallery" data-nav="Galería" style="padding:72px 28px 80px;text-align:center;overflow:visible">
+<section id="gallery" data-nav="Galería" style="padding:72px 28px 80px;text-align:center;overflow:visible" class="ink-host">
+  <div class="ink-bg bgn ink-c" aria-hidden="true"><i style="background-image:url(bg/gallery.webp)"></i></div>
 <!-- ═══ GALERÍA · CARRUSEL 3D CON ESPEJO (reemplaza el INTERIOR de <section id="gallery" data-nav="Galería">) ═══
      Placeholders: quitar la clase "g3-ph" de cada .g3-card y borrar los <span class="g3-ph-mono">
      cuando lleguen las fotos reales (cambiar src en .g3-photo img Y en .g3-refl img; deben ser la MISMA url). -->
@@ -3525,29 +3553,45 @@ section#rsvp{
 
   <div class="g3-stage" id="g3Stage" aria-label="Galería de fotos, desliza para girar y toca una foto para ampliarla">
     <div class="g3-ring" id="g3Ring">
-      <figure class="g3-card g3-ph" data-i="0">
-        <div class="g3-photo"><img src="assets/gallery/ph-1.jpg" alt="Foto de Andrés Matías (próximamente)" draggable="false"><span class="g3-ph-mono">ANDY</span></div>
-        <div class="g3-refl" aria-hidden="true"><img src="assets/gallery/ph-1.jpg" alt="" draggable="false"></div>
+      <figure class="g3-card" data-i="0">
+        <div class="g3-photo"><img src="assets/fotos/g01.jpg" alt="Andrés Matías sonriendo" draggable="false"></div>
+        <div class="g3-refl" aria-hidden="true"><img src="assets/fotos/g01.jpg" alt="" draggable="false"></div>
       </figure>
-      <figure class="g3-card g3-ph" data-i="1">
-        <div class="g3-photo"><img src="assets/gallery/ph-2.jpg" alt="Foto de Andrés Matías (próximamente)" draggable="false"><span class="g3-ph-mono">ANDY</span></div>
-        <div class="g3-refl" aria-hidden="true"><img src="assets/gallery/ph-2.jpg" alt="" draggable="false"></div>
+      <figure class="g3-card" data-i="1">
+        <div class="g3-photo"><img src="assets/fotos/g02.jpg" alt="Andrés Matías en brazos de papá" draggable="false"></div>
+        <div class="g3-refl" aria-hidden="true"><img src="assets/fotos/g02.jpg" alt="" draggable="false"></div>
       </figure>
-      <figure class="g3-card g3-ph" data-i="2">
-        <div class="g3-photo"><img src="assets/gallery/ph-3.jpg" alt="Foto de Andrés Matías (próximamente)" draggable="false"><span class="g3-ph-mono">ANDY</span></div>
-        <div class="g3-refl" aria-hidden="true"><img src="assets/gallery/ph-3.jpg" alt="" draggable="false"></div>
+      <figure class="g3-card" data-i="2">
+        <div class="g3-photo"><img src="assets/fotos/g03.jpg" alt="Andrés Matías con sus papás" draggable="false"></div>
+        <div class="g3-refl" aria-hidden="true"><img src="assets/fotos/g03.jpg" alt="" draggable="false"></div>
       </figure>
-      <figure class="g3-card g3-ph" data-i="3">
-        <div class="g3-photo"><img src="assets/gallery/ph-4.jpg" alt="Foto de Andrés Matías (próximamente)" draggable="false"><span class="g3-ph-mono">ANDY</span></div>
-        <div class="g3-refl" aria-hidden="true"><img src="assets/gallery/ph-4.jpg" alt="" draggable="false"></div>
+      <figure class="g3-card" data-i="3">
+        <div class="g3-photo"><img src="assets/fotos/g04.jpg" alt="Andrés Matías con sus papás en la sala" draggable="false"></div>
+        <div class="g3-refl" aria-hidden="true"><img src="assets/fotos/g04.jpg" alt="" draggable="false"></div>
       </figure>
-      <figure class="g3-card g3-ph" data-i="4">
-        <div class="g3-photo"><img src="assets/gallery/ph-5.jpg" alt="Foto de Andrés Matías (próximamente)" draggable="false"><span class="g3-ph-mono">ANDY</span></div>
-        <div class="g3-refl" aria-hidden="true"><img src="assets/gallery/ph-5.jpg" alt="" draggable="false"></div>
+      <figure class="g3-card" data-i="4">
+        <div class="g3-photo"><img src="assets/fotos/g05.jpg" alt="Andrés Matías con su familia" draggable="false"></div>
+        <div class="g3-refl" aria-hidden="true"><img src="assets/fotos/g05.jpg" alt="" draggable="false"></div>
       </figure>
-      <figure class="g3-card g3-ph" data-i="5">
-        <div class="g3-photo"><img src="assets/gallery/ph-6.jpg" alt="Foto de Andrés Matías (próximamente)" draggable="false"><span class="g3-ph-mono">ANDY</span></div>
-        <div class="g3-refl" aria-hidden="true"><img src="assets/gallery/ph-6.jpg" alt="" draggable="false"></div>
+      <figure class="g3-card" data-i="5">
+        <div class="g3-photo"><img src="assets/fotos/g06.jpg" alt="Andrés Matías con sus padrinos" draggable="false"></div>
+        <div class="g3-refl" aria-hidden="true"><img src="assets/fotos/g06.jpg" alt="" draggable="false"></div>
+      </figure>
+      <figure class="g3-card" data-i="6">
+        <div class="g3-photo"><img src="assets/fotos/g07.jpg" alt="Andrés Matías con sus papás" draggable="false"></div>
+        <div class="g3-refl" aria-hidden="true"><img src="assets/fotos/g07.jpg" alt="" draggable="false"></div>
+      </figure>
+      <figure class="g3-card" data-i="7">
+        <div class="g3-photo"><img src="assets/fotos/g08.jpg" alt="Andrés Matías con su familia" draggable="false"></div>
+        <div class="g3-refl" aria-hidden="true"><img src="assets/fotos/g08.jpg" alt="" draggable="false"></div>
+      </figure>
+      <figure class="g3-card" data-i="8">
+        <div class="g3-photo"><img src="assets/fotos/g09.jpg" alt="Andrés Matías con mamá" draggable="false"></div>
+        <div class="g3-refl" aria-hidden="true"><img src="assets/fotos/g09.jpg" alt="" draggable="false"></div>
+      </figure>
+      <figure class="g3-card" data-i="9">
+        <div class="g3-photo"><img src="assets/fotos/g10.jpg" alt="Las manitas de Andrés Matías" draggable="false"></div>
+        <div class="g3-refl" aria-hidden="true"><img src="assets/fotos/g10.jpg" alt="" draggable="false"></div>
       </figure>
     </div>
   </div>
@@ -3563,7 +3607,7 @@ section#rsvp{
       <img id="g3LbImg" alt="">
       <span class="g3-ph-mono g3-lb-mono" id="g3LbMono" hidden>ANDY</span>
     </div>
-    <span class="g3-lb-counter" id="g3LbCounter" aria-live="polite">1 / 6</span>
+    <span class="g3-lb-counter" id="g3LbCounter" aria-live="polite">1 / 10</span>
   </div>
 
 
@@ -3573,7 +3617,7 @@ section#rsvp{
 
 <!-- ═══════════════ 12. RSVP ═════════════════════════ -->
 <section id="rsvp" data-nav="Confirmar" class="ink-host">
-  <div class="ink-bg ink-oval ink-d flip" aria-hidden="true"><i></i></div>
+  <div class="ink-bg bgn ink-d" aria-hidden="true"><i style="background-image:url(bg/rsvp.webp)"></i></div>
   <span class="lbl">Confirmación de asistencia</span>
   <h2 class="ttl">Tu presencia lo significa todo</h2>
   <div class="gline"></div>
@@ -3642,7 +3686,8 @@ section#rsvp{
 
 
 <!-- ═══════════════ 13. FOOTER ═══════════════════════ -->
-<footer id="footer">
+<footer id="footer" class="ink-host">
+  <div class="ink-bg bgn ink-a" aria-hidden="true"><i style="background-image:url(bg/footer.webp)"></i></div>
   <div class="ft-orn">✦ · ✦ · ✦</div>
   <div class="ft-nms">Andrés Matías</div>
   <div class="gline" style="margin-top:22px"></div>
@@ -4582,7 +4627,7 @@ function initSectionFades(){
   var secs = Array.prototype.slice.call(document.querySelectorAll('.main-wrap > section, .main-wrap > footer'));
   var page = 'rgb(255,255,255)';
   var SET = { hero: { bot: '#FAF7EC' }, invite: { top: '#FAF7EC', bot: '#F6F2EC' }, countdown: { top: '#FAF7EC', bot: '#F0ECDA' },
-              itinerary: { top: '#FFFFFF', bot: '#FFFFFF' } };
+              itinerary: { top: '#FFFFFF', bot: '#FFFFFF' }, footer: { top: '#1F241A', bot: '#1F241A' } };
   function rgb(c){
     if (!c) return null;
     if (c[0] === '#') { var n = parseInt(c.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
