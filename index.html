@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="theme-color" content="#FAF7EC">
+  <meta name="theme-color" content="#F6F3EA">
   <title>Andrés Matías · Mi Bautizo · 6 · Febrero · 2027</title>
   <meta name="description" content="Andrés Matías González Estrada · Mi Bautizo · 6 de Febrero de 2027 · Morelia, Michoacán">
 
@@ -12,12 +12,12 @@
   <meta property="og:url"         content="https://bautizo-andres-matias-gonzalez-estrada.vercel.app/">
   <meta property="og:title"       content="Andrés Matías · Mi Bautizo · 6 · Febrero · 2027">
   <meta property="og:description" content="Te invito a celebrar mi bautizo · Abre tu invitación">
-  <meta property="og:image"       content="https://bautizo-andres-matias-gonzalez-estrada.vercel.app/og-image.jpg">
-  <meta property="og:image:secure_url" content="https://bautizo-andres-matias-gonzalez-estrada.vercel.app/og-image.jpg">
+  <meta property="og:image"       content="https://bautizo-andres-matias-gonzalez-estrada.vercel.app/og-image.jpg?v=2">
+  <meta property="og:image:secure_url" content="https://bautizo-andres-matias-gonzalez-estrada.vercel.app/og-image.jpg?v=2">
   <meta property="og:image:type"  content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt"   content="Invitación al bautizo de Andrés Matías">
+  <meta property="og:image:alt"   content="Sobre de la invitación con sello ANDY">
   <meta property="og:locale"      content="es_MX">
 
   <!-- Twitter -->
@@ -25,7 +25,7 @@
   <meta name="twitter:url"         content="https://bautizo-andres-matias-gonzalez-estrada.vercel.app/">
   <meta name="twitter:title"       content="Andrés Matías · Mi Bautizo · 6 · Febrero · 2027">
   <meta name="twitter:description" content="Te invito a celebrar mi bautizo · Abre tu invitación">
-  <meta name="twitter:image"       content="https://bautizo-andres-matias-gonzalez-estrada.vercel.app/og-image.jpg">
+  <meta name="twitter:image"       content="https://bautizo-andres-matias-gonzalez-estrada.vercel.app/og-image.jpg?v=2">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,12 +34,12 @@
 /* ── TOKENS ───────────────────────────────────────────── */
 :root {
   --olive:        #758c62;             /* verde olivo (acento fuerte) */
-  --olive-lt:     #D4C5B2;             /* beige cálido — highlight claro */
-  --olive-accent: #8FA878;             /* olivo medio (swatches) */
+  --olive-lt:     #D7C9B3;             /* beige cálido — highlight claro */
+  --olive-accent: #8FA77F;             /* olivo medio (swatches) */
   --olive-dim:    rgba(117,140,98,.14);
   --cream:        #3A412A;             /* olivo oscuro — texto principal */
   --ink:          #FFFFFF;             /* blanco puro — bg principal */
-  --ink2:         #FAF7EC;             /* cream cálido — bg secundario */
+  --ink2:         #F6F3EA;             /* cream cálido — bg secundario */
   --ink3:         #F0ECDA;             /* cream más definido — bg terciario */
   --spring:       cubic-bezier(.34,1.56,.64,1);
   --smooth:       cubic-bezier(.25,.46,.45,.94);
@@ -201,7 +201,7 @@ section{padding:64px 22px}
 .wheel-card img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;pointer-events:none}
 .wheel-ring.dragging{cursor:grabbing}
 
-/* ── #D4C5B2 ACCENT (35% presence) ───────────────────── */
+/* ── #D7C9B3 ACCENT (35% presence) ───────────────────── */
 #countdown{background:linear-gradient(180deg,var(--ink) 0%,#f3efe6 50%,var(--ink) 100%)}
 #calendar{background:#f0ead9}
 #itinerary{background:linear-gradient(180deg,var(--ink) 0%,rgba(212,197,178,.18) 50%,var(--ink) 100%)}
@@ -216,7 +216,7 @@ footer{background:#f0ead9}
 
 /* ── INVITACIÓN FAMILIAR ─────────────────────────────── */
 #invite{
-  background:linear-gradient(180deg,#faf7ec 0%,rgba(212,197,178,.22) 100%);
+  background:linear-gradient(180deg,#F6F3EA 0%,rgba(212,197,178,.22) 100%);
   padding:70px 26px;text-align:center;
   border-bottom:1px solid rgba(168,180,120,.12);
 }
@@ -289,17 +289,17 @@ footer{background:#f0ead9}
   background:
     linear-gradient(to bottom,
       rgba(255,255,255,.28) 0%,
-      rgba(250,247,236,.20) 30%,
-      rgba(250,247,236,.42) 55%,
-      rgba(250,247,236,.80) 78%,
-      rgba(250,247,236,.98) 100%);
+      rgba(246,243,234,.20) 30%,
+      rgba(246,243,234,.42) 55%,
+      rgba(246,243,234,.80) 78%,
+      rgba(246,243,234,.98) 100%);
 }
 /* Halo radial detrás del nombre — más presente */
 .h-ov::after{
   content:'';position:absolute;
   left:50%;top:48%;transform:translate(-50%,-50%);
   width:96%;max-width:460px;aspect-ratio:1;
-  background:radial-gradient(circle, rgba(255,255,255,.78) 0%, rgba(250,247,236,.45) 40%, transparent 68%);
+  background:radial-gradient(circle, rgba(255,255,255,.78) 0%, rgba(246,243,234,.45) 40%, transparent 68%);
   pointer-events:none;
 }
 
@@ -533,7 +533,7 @@ footer{background:#f0ead9}
 #location > *{position:relative;z-index:1}
 
 .loc-card{
-  background:linear-gradient(180deg, rgba(250,247,236,.55) 0%, rgba(240,236,218,.35) 100%);
+  background:linear-gradient(180deg, rgba(246,243,234,.55) 0%, rgba(240,236,218,.35) 100%);
   backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
   border:1px solid rgba(168,180,120,.22);
   border-radius:18px;
@@ -764,7 +764,7 @@ footer{background:#f0ead9}
 }
 .itv3-gem{
   width:9px;height:9px;
-  background:linear-gradient(135deg,#8FA878 30%,#4A5C38);
+  background:linear-gradient(135deg,#8FA77F 30%,#4A5C38);
   transform:rotate(45deg);border-radius:2px;
   box-shadow:0 0 0 4px rgba(117,140,98,0.12),0 0 18px rgba(117,140,98,0.45);
   margin-bottom:18px;flex-shrink:0;
@@ -1104,7 +1104,7 @@ footer{background:#f0ead9}
   box-shadow:
     0 18px 42px -16px rgba(58,65,42,.38),
     0 3px 10px rgba(58,65,42,.1);
-  border:1.5px solid rgba(250,247,236,.85);
+  border:1.5px solid rgba(246,243,234,.85);
   cursor:pointer;
   background:var(--ink2);
   rotate:-2deg;
@@ -1412,7 +1412,7 @@ footer{background:#f0ead9}
 .gf-bc-badge{
   font-family:'Cormorant Garamond',serif;font-weight:600;font-size:22px;
   letter-spacing:3px;color:#3A412A;
-  background:linear-gradient(135deg,#EBDFCB,#D4C5B2);
+  background:linear-gradient(135deg,#EBDFCB,#D7C9B3);
   padding:6px 14px;border-radius:8px;line-height:1;
   box-shadow:0 3px 10px rgba(0,0,0,.28);
 }
@@ -1832,7 +1832,7 @@ section.has-sec-waves{padding-top:84px;padding-bottom:86px}
 /* ═══════════════════════════════════════════════════════
    BAUTIZO ANDRÉS MATÍAS — ajustes de contenido
    ═══════════════════════════════════════════════════════ */
-:root{--olive:#5E7350;--ease:cubic-bezier(.22,1,.36,1)}
+:root{--olive:#5F6F56;--ease:cubic-bezier(.22,1,.36,1)}
 .h-amp-sm{font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1;letter-spacing:0}
 .h-date-wrap{margin-top:30px}
 .inv-children{font-size:42px;margin-top:14px}
@@ -1910,21 +1910,21 @@ body{font-weight:500}
 .fab-wrap{position:fixed;z-index:1000;top:max(14px,env(safe-area-inset-top));right:14px;display:flex;gap:10px;opacity:0;pointer-events:none;transition:opacity 1s ease}
 .fab-wrap.show{opacity:1;pointer-events:auto}
 .fab{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#3A412A;
-  background:rgba(250,247,236,.72);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
-  border:1px solid rgba(179,164,110,.85);box-shadow:0 6px 18px -8px rgba(58,65,42,.45);touch-action:manipulation}
+  background:rgba(246,243,234,.72);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  border:1px solid rgba(201,169,106,.85);box-shadow:0 6px 18px -8px rgba(58,65,42,.45);touch-action:manipulation}
 .fab svg{width:20px;height:20px}
-.menu{position:fixed;inset:0;z-index:1001;background:#FAF7EC;display:flex;align-items:center;justify-content:center;
+.menu{position:fixed;inset:0;z-index:1001;background:#F6F3EA;display:flex;align-items:center;justify-content:center;
   opacity:0;visibility:hidden;transition:opacity .55s ease,visibility 0s .55s;overflow-y:auto}
 .menu.open{opacity:1;visibility:visible;transition:opacity .55s ease,visibility 0s}
-.menu-close{position:absolute;top:max(14px,env(safe-area-inset-top));right:14px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(179,164,110,.7);background:transparent;color:#3A412A;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.menu-close{position:absolute;top:max(14px,env(safe-area-inset-top));right:14px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(201,169,106,.7);background:transparent;color:#3A412A;cursor:pointer;display:flex;align-items:center;justify-content:center}
 .menu-close svg{width:20px;height:20px}
 .menu-in{display:flex;flex-direction:column;align-items:center;padding:80px 24px 60px}
-.menu-rule{display:block;width:72px;height:1px;margin-bottom:34px;background:linear-gradient(90deg,transparent,#B3A46E,#7C7247,#B3A46E,transparent)}
+.menu-rule{display:block;width:72px;height:1px;margin-bottom:34px;background:linear-gradient(90deg,transparent,#C9A96A,#9A7B45,#C9A96A,transparent)}
 .menu ol{list-style:none;display:flex;flex-direction:column;align-items:center;gap:18px;margin:0;padding:0}
 .menu li{opacity:0;transform:translateY(10px)}
 .menu.open li{opacity:1;transform:none;transition:opacity .6s ease,transform .6s ease}
 .menu a{display:block;min-height:44px;line-height:44px;text-decoration:none;color:#3A412A;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(26px,7.2vw,34px);letter-spacing:.02em;text-align:center}
-.menu a.on{font-style:italic;color:#5E7350}
+.menu a.on{font-style:italic;color:#5F6F56}
 body.locked{overflow:hidden}
 
 /* ── CAPA DE VIDA ──────────────────────────────────────── */
@@ -1986,11 +1986,11 @@ body.locked{overflow:hidden}
   transform:translateX(-130%) skewX(-10deg);animation:heroLens 12s ease-in-out 2s infinite}
 @keyframes heroLens{0%{transform:translateX(-130%) skewX(-10deg);opacity:0}6%{opacity:.18}40%{transform:translateX(300%) skewX(-10deg);opacity:.18}46%,100%{transform:translateX(300%) skewX(-10deg);opacity:0}}
 .hero-dust i{position:absolute;bottom:-12px;width:var(--s);height:var(--s);border-radius:50%;opacity:0;
-  background:radial-gradient(circle,#E8DFB8 0%,#B3A46E 55%,rgba(179,164,110,0) 75%);
+  background:radial-gradient(circle,#E8DFB8 0%,#C9A96A 55%,rgba(201,169,106,0) 75%);
   animation:dustUp var(--t) linear var(--d) infinite}
 @keyframes dustUp{0%{transform:translate3d(0,0,0);opacity:0}12%{opacity:var(--o)}35%{opacity:calc(var(--o)*.35)}55%{opacity:var(--o)}75%{opacity:calc(var(--o)*.4)}100%{transform:translate3d(14px,-92vh,0);opacity:0}}
 .hero-vig{background:radial-gradient(120% 90% at 50% 45%,rgba(0,0,0,0) 55%,rgba(58,65,42,.16) 100%)}
-.h-ov{background:linear-gradient(to bottom,rgba(250,247,236,0) 0%,rgba(250,247,236,0) 40%,rgba(250,247,236,.55) 60%,rgba(250,247,236,.9) 80%,#FAF7EC 100%)!important;z-index:1}
+.h-ov{background:linear-gradient(to bottom,rgba(246,243,234,0) 0%,rgba(246,243,234,0) 40%,rgba(246,243,234,.55) 60%,rgba(246,243,234,.9) 80%,#F6F3EA 100%)!important;z-index:1}
 .h-ov::after{top:74%!important}
 .h-name{text-shadow:none!important}
 .h-amp{text-shadow:none!important}
@@ -2008,7 +2008,7 @@ body.locked{overflow:hidden}
 .pad-card:nth-child(3n),.lev:nth-child(3n){animation-delay:-4.1s}
 
 /* ═════ 10–11. TEXTO METÁLICO CON BRILLO SUAVE ═════ */
-:root{--gold:#B3A46E;--gold-deep:#7C7247;--foil:linear-gradient(100deg,#4A4528 0%,#6E6640 26%,#9A8C55 50%,#6E6640 74%,#4A4528 100%)}
+:root{--gold:#C9A96A;--gold-deep:#9A7B45;--foil:linear-gradient(100deg,#4E3D20 0%,#6E5530 28%,#A8884E 50%,#6E5530 72%,#4E3D20 100%)}
 .foil-text{background:var(--foil);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--gold-deep);
   animation:goldSweep 7s ease-in-out infinite;
   padding:.22em .45em;margin-left:-.45em;margin-right:-.45em;margin-top:-.22em;margin-bottom:-.22em;line-height:1.25;
@@ -2043,8 +2043,8 @@ body.locked{overflow:hidden}
   text-transform:uppercase;
   line-height:1.2;
   margin:14px 0 8px;
-  color:#7C7247;
-  background:linear-gradient(100deg,#7C7247 0%,#B3A46E 30%,#D9CFA6 50%,#B3A46E 70%,#7C7247 100%);
+  color:#9A7B45;
+  background:linear-gradient(100deg,#9A7B45 0%,#C9A96A 30%,#E4D3A9 50%,#C9A96A 70%,#9A7B45 100%);
   background-size:220% auto;
   -webkit-background-clip:text; background-clip:text;
   -webkit-text-fill-color:transparent;
@@ -2120,7 +2120,7 @@ body.locked{overflow:hidden}
   font-weight:600;
   font-size:22px;
   line-height:1.15;
-  color:#5E7350;
+  color:#5F6F56;
 }
 .dc2-fig-sub{
   font-family:system-ui,-apple-system,'Segoe UI',sans-serif;
@@ -2141,14 +2141,14 @@ body.locked{overflow:hidden}
 .dc2-group-lbl{
   font-family:system-ui,-apple-system,'Segoe UI',sans-serif;
   font-weight:600; font-size:13px; letter-spacing:.14em; text-transform:uppercase;
-  color:#7C7247; margin:0 0 20px;
+  color:#9A7B45; margin:0 0 20px;
 }
 .dc2-orb-wrap{ display:flex; flex-direction:column; align-items:center; gap:14px; }
 .dc2-orb-holder{ position:relative; width:72px; height:72px; }
 /* glow champán pulsante (pseudo con opacity + scale) */
 .dc2-orb-holder::before{
   content:''; position:absolute; inset:-14px; border-radius:50%; pointer-events:none;
-  background:radial-gradient(circle, rgba(179,164,110,.5) 0%, rgba(179,164,110,.2) 45%, rgba(179,164,110,0) 70%);
+  background:radial-gradient(circle, rgba(201,169,106,.5) 0%, rgba(201,169,106,.2) 45%, rgba(201,169,106,0) 70%);
   animation:dc2OrbGlow 3s ease-in-out infinite;
 }
 /* aro punteado */
@@ -2216,8 +2216,8 @@ body.locked{overflow:hidden}
    versión continua de boda-celeste-hernandez-y-jose-silva)
    Sobre SVG con solapa 3D, sello ANDY, aterrizaje con rebote,
    respiración y lluvia continua detrás (3 profundidades).
-   Repintado: papel #F0ECDA/#FAF7EC, champán #7C7247/#B3A46E/#D9CFA6,
-   sello olivo #5E7350, texto #3A412A.
+   Repintado: papel #F0ECDA/#F6F3EA, champán #9A7B45/#C9A96A/#E4D3A9,
+   sello olivo #5F6F56, texto #3A412A.
    ============================================================ */
 #gifts.ls{
   position:relative;
@@ -2304,12 +2304,12 @@ body.locked{overflow:hidden}
   border:none; background:none; cursor:pointer;
   font-family:system-ui,-apple-system,'Segoe UI',sans-serif; font-weight:600; font-size:14px;
   letter-spacing:.16em; text-transform:uppercase;
-  color:#7C7247;
+  color:#9A7B45;
   -webkit-tap-highlight-color:transparent;
   touch-action:manipulation;
   animation:lsHintPulse 2.4s ease-in-out infinite;
 }
-.ls-hint:focus-visible{ outline:2px solid #5E7350; outline-offset:3px; border-radius:6px; }
+.ls-hint:focus-visible{ outline:2px solid #5F6F56; outline-offset:3px; border-radius:6px; }
 @keyframes lsHintPulse{ 0%,100%{opacity:.7} 50%{opacity:1} }
 
 /* ── Mensaje al abrir (solo opacity/transform) ── */
@@ -2324,13 +2324,13 @@ body.locked{overflow:hidden}
   transition:opacity .45s ease .25s, transform .55s cubic-bezier(.2,.7,.2,1) .25s;
 }
 .ls.is-js .ls-open.is-shown{ opacity:1; transform:none; }
-.ls-mailbox{ width:42px; height:42px; color:#7C7247; }
+.ls-mailbox{ width:42px; height:42px; color:#9A7B45; }
 .ls-msg-title{
   font-family:'Great Vibes',cursive;
   font-size:clamp(32px,8.6vw,38px);
   line-height:1.35;
   padding:.06em .1em;
-  color:#5E7350;
+  color:#5F6F56;
   margin:0;
 }
 .ls-msg-desc{
@@ -2354,11 +2354,11 @@ body.locked{overflow:hidden}
    Fondo y velo del reflejo comparten --g3-bg: si cambias el fondo de la
    sección, cambia SOLO esa variable y el espejo se funde solo. */
 section#gallery{
-  --g3-bg:#FAF7EC;
-  --g3-olive:#5E7350;
+  --g3-bg:#F6F3EA;
+  --g3-olive:#5F6F56;
   --g3-text:#3A412A;
-  --g3-gold:#B3A46E;
-  --g3-gold-lt:#D9CFA6;
+  --g3-gold:#C9A96A;
+  --g3-gold-lt:#E4D3A9;
   background:linear-gradient(180deg,#FFFFFF 0%,var(--g3-bg) 22%,var(--g3-bg) 100%);
   overflow:hidden;            /* nada del aro 3D genera scroll horizontal */
 }
@@ -2411,7 +2411,7 @@ section#gallery{
 }
 .g3-photo::after{             /* filo metálico interior */
   content:"";position:absolute;inset:5px;border-radius:10px;
-  border:1px solid rgba(179,164,110,.55);pointer-events:none;
+  border:1px solid rgba(201,169,106,.55);pointer-events:none;
 }
 .g3-photo img,
 .g3-refl img{
@@ -2445,7 +2445,7 @@ section#gallery{
     var(--g3-bg) 92%);
 }
 @supports not (background:color-mix(in srgb,red 50%,transparent)){
-  .g3-refl::after{background:linear-gradient(180deg,rgba(250,247,236,.58) 0%,rgba(250,247,236,.82) 45%,#FAF7EC 92%)}
+  .g3-refl::after{background:linear-gradient(180deg,rgba(246,243,234,.58) 0%,rgba(246,243,234,.82) 45%,#F6F3EA 92%)}
 }
 
 /* ── PLACEHOLDER "ANDY" (borrar estas 2 reglas + los spans al tener fotos) ── */
@@ -2454,7 +2454,7 @@ section#gallery{
   transform:translate(-50%,-50%);
   font-family:'Cinzel',serif;font-weight:600;
   font-size:clamp(20px,6vw,28px);letter-spacing:.24em;padding-left:.24em;
-  color:var(--g3-olive,#5E7350);
+  color:var(--g3-olive,#5F6F56);
   text-shadow:0 0 16px #fff,0 0 28px #fff;
   pointer-events:none;white-space:nowrap;
 }
@@ -2463,7 +2463,7 @@ section#gallery{
 .g3-hint{
   font-family:'Cormorant Garamond',serif;font-style:italic;
   font-size:17px;font-weight:600;letter-spacing:.06em;line-height:1.4;
-  color:#5E7350;               /* 4.9:1 sobre #FAF7EC */
+  color:#5F6F56;               /* 4.9:1 sobre #F6F3EA */
   margin:6px auto 0;padding:0 12px;text-align:center;max-width:320px;
 }
 
@@ -2499,7 +2499,7 @@ section#gallery{
   width:48px;height:48px;border-radius:50%;
   display:flex;align-items:center;justify-content:center;
   border:1.5px solid rgba(217,207,166,.85);
-  background:rgba(250,247,236,.95);color:#3A412A;
+  background:rgba(246,243,234,.95);color:#3A412A;
   font-family:system-ui,-apple-system,'Segoe UI',sans-serif;
   font-size:30px;font-weight:500;line-height:1;
   cursor:pointer;-webkit-tap-highlight-color:transparent;
@@ -2507,7 +2507,7 @@ section#gallery{
   transition:transform .2s ease,background .2s ease;
 }
 .g3-lb-btn:active{transform:scale(.92)}
-.g3-lb-btn:focus-visible{outline:2px solid #D9CFA6;outline-offset:3px}
+.g3-lb-btn:focus-visible{outline:2px solid #E4D3A9;outline-offset:3px}
 .g3-lb-close{top:max(16px,env(safe-area-inset-top));right:16px;font-size:32px}
 .g3-lb-prev{left:10px;top:50%;margin-top:-24px}
 .g3-lb-next{right:10px;top:50%;margin-top:-24px}
@@ -2516,7 +2516,7 @@ section#gallery{
   transform:translateX(-50%);
   font-family:system-ui,-apple-system,'Segoe UI',sans-serif;
   font-size:16px;font-weight:600;letter-spacing:.12em;
-  color:#FAF7EC;
+  color:#F6F3EA;
   background:rgba(58,65,42,.75);
   border:1px solid rgba(217,207,166,.5);
   padding:6px 16px;border-radius:999px;
@@ -2530,9 +2530,9 @@ section#gallery{
    Todo bajo #rsvp: gana al CSS viejo de .rsvp-* (incluidos sus !important de
    "LEGIBILIDAD" y "RSVP estándar X pases"). Pegar AL FINAL del <style>. */
 section#rsvp{
-  --r-bg:#FFFFFF; --r-bg2:#FAF7EC; --r-surf:#F0ECDA;
-  --r-text:#3A412A; --r-olive:#5E7350; --r-olive-lt:#8FA878; --r-beige:#D4C5B2;
-  --r-gold-dk:#7C7247; --r-gold:#B3A46E; --r-gold-lt:#D9CFA6;
+  --r-bg:#FFFFFF; --r-bg2:#F6F3EA; --r-surf:#F0ECDA;
+  --r-text:#3A412A; --r-olive:#5F6F56; --r-olive-lt:#8FA77F; --r-beige:#D7C9B3;
+  --r-gold-dk:#9A7B45; --r-gold:#C9A96A; --r-gold-lt:#E4D3A9;
   --r-sans:system-ui,-apple-system,'Segoe UI',sans-serif;
   --r-serif:'Cormorant Garamond',serif;
   background:linear-gradient(180deg,var(--r-bg) 0%,var(--r-bg2) 55%,var(--r-bg) 100%);
@@ -2556,7 +2556,7 @@ section#rsvp{
 #rsvp .rsvp-adults{
   max-width:420px;margin:0 auto 26px;padding:20px 18px;
   background:linear-gradient(180deg,rgba(217,207,166,.22) 0%,rgba(255,255,255,.85) 100%);
-  border:1.5px solid rgba(179,164,110,.55);border-radius:16px;
+  border:1.5px solid rgba(201,169,106,.55);border-radius:16px;
 }
 #rsvp .rsvp-adults-line{background:linear-gradient(90deg,transparent,var(--r-gold),transparent);margin-bottom:14px}
 #rsvp .rsvp-adults-lbl{font-family:var(--r-sans);font-size:13px;font-weight:700;letter-spacing:.28em;color:var(--r-olive);margin-bottom:8px}
@@ -2567,7 +2567,7 @@ section#rsvp{
   position:relative;max-width:440px;margin:0 auto;
   padding:34px 22px 30px;
   background:#FFFFFF;
-  border:1px solid rgba(179,164,110,.55);
+  border:1px solid rgba(201,169,106,.55);
   border-radius:4px;
   box-shadow:0 26px 60px -30px rgba(58,65,42,.35),0 2px 10px rgba(58,65,42,.05);
   -webkit-backdrop-filter:none;backdrop-filter:none;
@@ -2582,7 +2582,7 @@ section#rsvp{
   font-family:var(--r-sans)!important;font-size:13px!important;font-weight:700!important;
   letter-spacing:.2em!important;text-transform:uppercase;
   color:var(--r-gold-dk)!important;opacity:1!important;
-  padding:8px 14px;border:1px solid rgba(179,164,110,.6);border-radius:999px;background:#fff;   /* #7C7247 sobre blanco = 4.8:1 */
+  padding:8px 14px;border:1px solid rgba(201,169,106,.6);border-radius:999px;background:#fff;   /* #9A7B45 sobre blanco = 4.8:1 */
 }
 
 /* "Esta invitación es para" + nombre en serif con brillo suave */
@@ -2600,7 +2600,7 @@ section#rsvp{
 }
 @keyframes rsvp2Glow{
   0%,100%{text-shadow:0 0 14px rgba(217,207,166,.85),0 0 30px rgba(217,207,166,.55),0 0 46px rgba(255,255,255,.9)}
-  50%    {text-shadow:0 0 18px rgba(217,207,166,1),0 0 38px rgba(179,164,110,.45),0 0 56px rgba(255,255,255,1)}
+  50%    {text-shadow:0 0 18px rgba(217,207,166,1),0 0 38px rgba(201,169,106,.45),0 0 56px rgba(255,255,255,1)}
 }
 
 /* recuadro de pases (sin menores) */
@@ -2609,7 +2609,7 @@ section#rsvp{
   width:fit-content;min-width:170px;max-width:100%;
   margin:14px auto 8px;padding:14px 30px 12px;
   background:var(--r-bg2);
-  border:1px solid rgba(179,164,110,.6);border-radius:4px;
+  border:1px solid rgba(201,169,106,.6);border-radius:4px;
   box-shadow:inset 0 0 0 4px #fff,inset 0 0 0 5px rgba(217,207,166,.7);
 }
 #rsvp .rsvp-pases-label{
@@ -2637,7 +2637,7 @@ section#rsvp{
 #rsvp .rsvp-toggle-btn{
   display:flex;align-items:center;justify-content:center;gap:9px;
   min-height:56px;padding:10px 10px;
-  border:1.5px solid rgba(179,164,110,.6);border-radius:4px;
+  border:1.5px solid rgba(201,169,106,.6);border-radius:4px;
   background:var(--r-bg2);
   font-family:var(--r-sans);font-style:normal;font-size:16px;font-weight:600;line-height:1.2;
   color:var(--r-text);text-align:center;
@@ -2670,7 +2670,7 @@ section#rsvp{
 #rsvp .rsvp-contador{
   display:flex;align-items:center;justify-content:center;gap:24px;
   padding:10px 14px;background:var(--r-bg2);
-  border:1px solid rgba(179,164,110,.6);border-radius:4px;
+  border:1px solid rgba(201,169,106,.6);border-radius:4px;
 }
 #rsvp .rsvp-contador-btn{
   width:48px;height:48px;border-radius:50%;
@@ -2735,7 +2735,7 @@ section#rsvp{
 #rsvp .rsvp-gracias{
   max-width:400px;margin:4px auto 0;padding:28px 20px 24px;
   background:var(--r-bg2);
-  border:1px solid rgba(179,164,110,.6);border-radius:4px;
+  border:1px solid rgba(201,169,106,.6);border-radius:4px;
   box-shadow:inset 0 0 0 4px #fff,inset 0 0 0 5px rgba(217,207,166,.7);
   text-align:center;
 }
@@ -2774,7 +2774,7 @@ section#rsvp{
 /* ============ MUSIC PLAYER (vinilo) · #music-btn ============
    Base boda-celeste-hernandez-y-jose-silva (base + override "esquina
    contraria" fusionados), repintado: disco negro, etiqueta / brazo /
-   insignia en metálico champán-olivo (#7C7247 · #B3A46E · #D9CFA6),
+   insignia en metálico champán-olivo (#9A7B45 · #C9A96A · #E4D3A9),
    texto de la etiqueta #3A412A. Esquina INFERIOR IZQUIERDA, 58 px.
    Aparece con fundido cuando se le añade .show (window.showVinyl()).
    Todo va bajo #music-btn para no chocar con nada. */
@@ -2788,12 +2788,12 @@ section#rsvp{
   -webkit-tap-highlight-color:transparent; touch-action:manipulation;
   opacity:0; transform:scale(.6); pointer-events:none;
   transition:opacity .6s ease, transform .4s cubic-bezier(.2,.7,.2,1);
-  box-shadow:0 8px 20px rgba(28,32,18,.42), 0 0 0 1.5px rgba(179,164,110,.6), 0 0 0 5px rgba(179,164,110,.14);
+  box-shadow:0 8px 20px rgba(28,32,18,.42), 0 0 0 1.5px rgba(201,169,106,.6), 0 0 0 5px rgba(201,169,106,.14);
 }
 #music-btn.show{ opacity:1; transform:scale(1); pointer-events:auto; }
 @media (hover:hover){ #music-btn.show:hover{ transform:scale(1.08); } }
 #music-btn.show:active{ transform:scale(.94); }
-#music-btn:focus-visible{ outline:2px solid #5E7350; outline-offset:4px; }
+#music-btn:focus-visible{ outline:2px solid #5F6F56; outline-offset:4px; }
 #music-btn span{ display:block; }
 
 /* giro solo mientras suena */
@@ -2834,7 +2834,7 @@ section#rsvp{
 #music-btn .vinyl-disc::after{
   content:""; position:absolute; left:50%; top:50%; width:44%; height:44%;
   transform:translate(-50%,-50%); border-radius:50%; z-index:1;
-  background:radial-gradient(circle at 34% 28%,#F4EED6 0%,#D9CFA6 30%,#B3A46E 62%,#7C7247 100%);
+  background:radial-gradient(circle at 34% 28%,#F4EED6 0%,#E4D3A9 30%,#C9A96A 62%,#9A7B45 100%);
   box-shadow:0 0 0 1.2px rgba(40,38,22,.55), inset 0 0 5px rgba(255,255,255,.35);
 }
 /* reflejo */
@@ -2862,7 +2862,7 @@ section#rsvp{
   position:absolute; right:-3px; bottom:-3px; z-index:4;
   width:18px; height:18px; padding:3.5px; box-sizing:border-box;
   border-radius:50%;
-  background:radial-gradient(circle at 35% 30%,#D9CFA6 0%,#B3A46E 55%,#7C7247 100%);
+  background:radial-gradient(circle at 35% 30%,#E4D3A9 0%,#C9A96A 55%,#9A7B45 100%);
   box-shadow:0 2px 6px rgba(0,0,0,.38);
   pointer-events:none;
 }
@@ -2874,7 +2874,7 @@ section#rsvp{
 /* pulso */
 #music-btn::after{
   content:""; position:absolute; inset:-5px; border-radius:50%;
-  border:1px solid #B3A46E; opacity:.3; pointer-events:none;
+  border:1px solid #C9A96A; opacity:.3; pointer-events:none;
   animation:vinylPulse 3s ease-in-out infinite;
 }
 #music-btn.is-playing::after{ animation-duration:1.6s; }
@@ -2890,17 +2890,17 @@ section#rsvp{
 #music-btn.is-playing .vinyl-tonearm{ transform:rotate(-12deg); }
 #music-btn .vinyl-tonearm-line{
   position:absolute; top:2px; right:4px; width:2px; height:27px;
-  background:linear-gradient(to bottom,#7C7247,#D9CFA6 40%,#7C7247);
+  background:linear-gradient(to bottom,#9A7B45,#E4D3A9 40%,#9A7B45);
   border-radius:1px; transform:rotate(-5deg); transform-origin:top center;
 }
 #music-btn .vinyl-tonearm-head{
   position:absolute; bottom:0; right:2px; width:5px; height:6.5px;
-  background:#B3A46E; border-radius:0 0 2px 2px;
+  background:#C9A96A; border-radius:0 0 2px 2px;
   box-shadow:0 1px 2px rgba(0,0,0,.3);
 }
 #music-btn .vinyl-tonearm-pivot{
   position:absolute; top:0; right:2px; width:7.5px; height:7.5px;
-  background:radial-gradient(circle,#F4EED6,#7C7247); border-radius:50%;
+  background:radial-gradient(circle,#F4EED6,#9A7B45); border-radius:50%;
   box-shadow:0 1px 3px rgba(0,0,0,.3);
 }
 
@@ -3004,13 +3004,13 @@ section#rsvp{
 /* ── VESTIMENTA · una bolita por color ── */
 #dresscode .dc2-code{background-image:var(--foil)!important;background-size:220% 100%!important}
 .dcx{display:flex;flex-direction:column;gap:30px;max-width:380px;margin:34px auto 0}
-.dcx-sub{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:14px;letter-spacing:.24em;padding-left:.24em;text-transform:uppercase;color:#5E7350}
+.dcx-sub{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:14px;letter-spacing:.24em;padding-left:.24em;text-transform:uppercase;color:#5F6F56}
 .dcx-grid{display:grid;justify-content:center;gap:22px 18px;margin-top:16px}
 .dcx-sw{display:flex;flex-direction:column;align-items:center;gap:10px;animation:levitate 6.5s ease-in-out infinite}
 .dcx-sw:nth-child(2n){animation-delay:-2.2s}.dcx-sw:nth-child(3n){animation-delay:-4.1s}
 .dcx-ball{position:relative;width:58px;height:58px;border-radius:50%;overflow:hidden;
   box-shadow:0 8px 18px -8px rgba(58,65,42,.45),inset 0 -6px 12px rgba(0,0,0,.12),inset 0 4px 8px rgba(255,255,255,.35)}
-.dcx-ball.light{box-shadow:0 0 0 1px #B3A46E,0 8px 18px -8px rgba(58,65,42,.45),inset 0 -6px 12px rgba(0,0,0,.08)}
+.dcx-ball.light{box-shadow:0 0 0 1px #C9A96A,0 8px 18px -8px rgba(58,65,42,.45),inset 0 -6px 12px rgba(0,0,0,.08)}
 .dcx-glow{position:absolute;inset:-10px;border-radius:50%;pointer-events:none;
   background:radial-gradient(circle,rgba(217,207,166,0) 52%,rgba(217,207,166,.75) 66%,rgba(217,207,166,0) 78%);
   animation:dcxGlow 3.2s ease-in-out infinite}
@@ -3021,7 +3021,7 @@ section#rsvp{
 @keyframes dcxGlow{0%,100%{opacity:.35;transform:scale(.96)}50%{opacity:1;transform:scale(1.04)}}
 @keyframes dcxSweep{0%,55%{transform:translateX(-160%) skewX(-14deg)}85%,100%{transform:translateX(330%) skewX(-14deg)}}
 .dcx-name{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;font-weight:500;font-size:14px;color:#3A412A;max-width:90px;line-height:1.3}
-.dcx-empty{display:inline-block;margin-top:12px;padding:9px 20px;border:1px solid rgba(179,164,110,.6);border-radius:999px;
+.dcx-empty{display:inline-block;margin-top:12px;padding:9px 20px;border:1px solid rgba(201,169,106,.6);border-radius:999px;
   font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:18px;color:#4F5740;background:rgba(255,255,255,.7)}
 @media (prefers-reduced-motion:reduce){.dcx-sw,.dcx-glow,.dcx-ball::after{animation:none!important}}
 
@@ -3043,10 +3043,10 @@ section#rsvp{
 #footer{background:#1F241A!important;border-top:0}
 #footer .ink-bg.bgn{-webkit-mask-image:linear-gradient(transparent 0,#000 120px,#000 100%);mask-image:linear-gradient(transparent 0,#000 120px,#000 100%)}
 #footer .ft-dt,#footer .ft-note{color:#EDE6CF!important;opacity:.92!important}
-#footer .ft-orn{color:#D9CFA6}
-#footer .el-credit{color:#D9CFA6!important;opacity:.9}
-#footer .el-sep,#footer .gline{background:linear-gradient(90deg,transparent,#B3A46E,transparent)}
-#footer .ft-nms.foil-text{background-image:linear-gradient(100deg,#B3A46E 0%,#D9CFA6 26%,#FFFBEA 50%,#D9CFA6 74%,#B3A46E 100%)}
+#footer .ft-orn{color:#E4D3A9}
+#footer .el-credit{color:#E4D3A9!important;opacity:.9}
+#footer .el-sep,#footer .gline{background:linear-gradient(90deg,transparent,#C9A96A,transparent)}
+#footer .ft-nms.foil-text{background-image:linear-gradient(100deg,#C9A96A 0%,#E4D3A9 26%,#FFFBEA 50%,#E4D3A9 74%,#C9A96A 100%)}
 #footer .sec-wave path{stroke:rgba(217,207,166,.35)}
 
 /* ═════ PORTADA · foto completa + nombre con brillo dorado ═════ */
@@ -3081,6 +3081,41 @@ section#rsvp{
 @keyframes bgSoftB{0%{transform:translate3d(.8%,0,0) scale(1.04) rotate(.2deg)}100%{transform:translate3d(-.6%,.6%,0) scale(1.01) rotate(-.2deg)}}
 #location .ink-bg.bgn > i,#itinerary .ink-bg.bgn > i,#padrinos .ink-bg.bgn > i,#rsvp .ink-bg.bgn > i,#dresscode .ink-bg.bgn > i,#footer .ink-bg.bgn > i{background-position:center top}
 @media (prefers-reduced-motion:reduce){.ink-bg.bgn > i{animation:none!important}}
+
+/* ═════ MESA DE REGALOS · PALACIO DE HIERRO ═════ */
+.ph-card{position:relative;overflow:hidden;max-width:340px;margin:34px auto 0;padding:26px 22px 24px;text-align:center;
+  background:rgba(255,255,255,.82);border:1px solid rgba(201,169,106,.55);border-radius:18px;
+  box-shadow:0 18px 40px -22px rgba(58,65,42,.45);animation:levitate 6.5s ease-in-out -2.2s infinite}
+.ph-sheen{position:absolute;top:-20%;bottom:-20%;left:0;width:40%;pointer-events:none;
+  background:linear-gradient(100deg,transparent,rgba(255,250,235,.7),transparent);transform:translateX(-160%) skewX(-12deg);animation:phSheen 7s ease-in-out 2s infinite}
+@keyframes phSheen{0%{transform:translateX(-160%) skewX(-12deg)}30%,100%{transform:translateX(330%) skewX(-12deg)}}
+.ph-kicker,.ht-promo-lbl{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:13px;letter-spacing:.24em;padding-left:.24em;text-transform:uppercase;color:#5F6F56}
+.ph-store{font-family:'Cinzel',serif;font-weight:600;font-size:21px;letter-spacing:.06em;color:#3A412A;margin:10px 0 14px}
+.ph-lbl,.ht-promo-sub{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;font-weight:500;font-size:14px;color:#4F5740}
+.ph-code,.ht-code{display:inline-flex;align-items:center;gap:12px;margin-top:8px;min-height:48px;padding:10px 20px;cursor:pointer;
+  border:1px solid rgba(201,169,106,.7);border-radius:12px;background:#fff;color:#3A412A;
+  font-family:system-ui,-apple-system,'Segoe UI',sans-serif;font-weight:600;font-size:22px;letter-spacing:.12em;font-variant-numeric:lining-nums tabular-nums}
+.ph-code svg,.ht-code svg{color:#9A7B45;flex-shrink:0}
+.ph-btn{margin-top:18px}
+/* ═════ HOSPEDAJE ═════ */
+#hospedaje{text-align:center}
+.ht-sub{font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.6;color:#3A412A;max-width:330px;margin:12px auto 26px;font-weight:500}
+.ht-card{max-width:360px;margin:0 auto;background:rgba(255,255,255,.88);border:1px solid rgba(201,169,106,.5);border-radius:22px;overflow:hidden;
+  box-shadow:0 22px 46px -24px rgba(58,65,42,.5);animation:levitate 6.5s ease-in-out -4.1s infinite}
+.ht-photos{position:relative;aspect-ratio:4/3;overflow:hidden;background:#EEE7D8;touch-action:pan-y}
+.ht-photos img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s ease}
+.ht-photos img.on{opacity:1}
+.ht-dots{position:absolute;left:0;right:0;bottom:10px;display:flex;justify-content:center;gap:4px}
+.ht-dots button{width:28px;height:28px;border:0;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.ht-dots button::before{content:'';width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.6);box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+.ht-dots button.on::before{background:#C9A96A;box-shadow:0 0 0 2px #fff}
+.ht-body{padding:22px 20px 24px}
+.ht-name{font-family:'Cinzel',serif;font-weight:600;font-size:20px;line-height:1.3;color:#3A412A}
+.ht-addr{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;font-weight:500;font-size:15px;line-height:1.5;color:#4F5740;margin-top:8px}
+.ht-promo{margin:18px auto 4px;padding:16px 12px;border:1px dashed rgba(201,169,106,.8);border-radius:14px;background:rgba(246,243,234,.7)}
+.ht-btns{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.ht-btns .btn{margin:0}
+@media (prefers-reduced-motion:reduce){.ph-card,.ht-card{animation:none}.ph-sheen{display:none}}
   </style>
 </head>
 <body>
@@ -3093,8 +3128,8 @@ section#rsvp{
 
 <!-- ENVELOPE OPENING SEQUENCE -->
 <div id="envelope-screen">
-  <img id="env-image" src="assets/envelope.png" alt="Sobre de invitación">
-  <video id="env-video" src="assets/envelope-open.mp4" muted playsinline preload="auto"></video>
+  <img id="env-image" src="assets/sobre.jpg" alt="Sobre de invitación con sello ANDY">
+  <video id="env-video" src="assets/sobre.mp4" muted playsinline preload="auto"></video>
   <div id="env-tap-hint">Toca para abrir</div>
 </div>
 <div id="env-flash" aria-hidden="true"></div>
@@ -3123,7 +3158,7 @@ section#rsvp{
 
 <!-- AUDIO -->
 <audio id="bgMusic" loop preload="auto">
-  <source src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/audio/boda-rosa-y-jorge/cancion.mp3" type="audio/mpeg">
+  <source src="cancion.mp3" type="audio/mpeg">
 </audio>
 
 <!-- MUSIC BTN — disco de vinil -->
@@ -3255,16 +3290,20 @@ section#rsvp{
         <path d="M0,20 Q100,10 200,20 T400,20 T600,20 T800,20 T1000,20 T1200,20 T1400,20 T1600,20" fill="none" stroke="rgba(168,180,120,.22)" stroke-width=".8"/>
       </svg>
     </div>
-    <p class="loc-type">✦  Ceremonia religiosa</p>
-    <h3 class="loc-name">Parroquia por confirmar</h3>
+    <p class="loc-type">✦  Misa y ceremonia de bautismo</p>
+    <h3 class="loc-name">Capilla del Jardín de Eventos Santa Sofía</h3>
     <div class="loc-times">
       <div class="loc-time-item">
         <span class="loc-time-tag">Hora</span>
-        <span class="loc-time-big loc-time-pc">Por confirmar</span>
+        <span class="loc-time-big">1:00<small>PM</small></span>
       </div>
     </div>
     <p class="loc-addr">Morelia · Michoacán</p>
-    <p class="loc-pend">Muy pronto compartiremos aquí la ubicación.</p>
+    <a href="https://www.google.com/maps/place/Jard%C3%ADn+de+Eventos+Santa+Sof%C3%ADa/@19.6397813,-101.1475949,17z/data=!3m1!4b1!4m6!3m5!1s0x842d128fad2c6911:0xcb3642b9b075afae!8m2!3d19.6397813!4d-101.1475949!16s%2Fg%2F11ddzcpjmn"
+       target="_blank" rel="noopener" class="btn">
+      <svg class="pin-ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Ver en Google Maps
+    </a>
     <div class="loc-wave loc-wave-bot" aria-hidden="true">
       <svg viewBox="0 0 1600 28" preserveAspectRatio="none">
         <path d="M0,14 Q100,24 200,14 T400,14 T600,14 T800,14 T1000,14 T1200,14 T1400,14 T1600,14" fill="none" stroke="rgba(168,180,120,.42)" stroke-width="1"/>
@@ -3360,7 +3399,7 @@ section#rsvp{
   <h2 class="ttl" style="font-size:26px">Guarda la Fecha</h2>
   <div class="gline"></div>
   <p class="cal-sub">Agrega mi bautizo a tu calendario<br>para no perderte ni un momento.</p>
-  <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bautizo+de+Andr%C3%A9s+Mat%C3%ADas&dates=20270206T140000/20270206T200000&ctz=America/Mexico_City&details=Recepci%C3%B3n+2:00+PM+%7C+Jard%C3%ADn+de+Eventos+Santa+Sof%C3%ADa&location=Jard%C3%ADn+de+Eventos+Santa+Sof%C3%ADa%2C+Morelia%2C+Michoac%C3%A1n"
+  <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bautizo+de+Andr%C3%A9s+Mat%C3%ADas&dates=20270206T130000/20270206T200000&ctz=America/Mexico_City&details=Misa+y+ceremonia+1:00+PM+%7C+Recepci%C3%B3n+2:00+PM+%7C+Comida+3:00+PM+%7C+Jard%C3%ADn+de+Eventos+Santa+Sof%C3%ADa&location=Jard%C3%ADn+de+Eventos+Santa+Sof%C3%ADa%2C+Morelia%2C+Michoac%C3%A1n"
      target="_blank" rel="noopener" id="calBtn"
      class="btn btn-olive" style="max-width:340px;margin:0 auto;display:flex;padding:18px 24px;font-size:15px;font-weight:400;letter-spacing:1px;border-radius:50px;box-shadow:0 6px 28px rgba(117,140,98,.35);animation:calPulse 2.5s ease-in-out infinite">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
@@ -3381,14 +3420,20 @@ section#rsvp{
 
     <div class="itv3-item">
       <div class="itv3-gem"></div>
-      <div class="itv3-time itv3-time-pc">Por confirmar</div>
-      <div class="itv3-ev">Ceremonia Religiosa</div>
+      <div class="itv3-time">1:00 PM</div>
+      <div class="itv3-ev">Misa y Ceremonia de Bautismo</div>
     </div>
 
     <div class="itv3-item">
       <div class="itv3-gem itv3-gem-beige"></div>
       <div class="itv3-time">2:00 PM</div>
       <div class="itv3-ev">Recepción</div>
+    </div>
+
+    <div class="itv3-item">
+      <div class="itv3-gem"></div>
+      <div class="itv3-time">3:00 PM</div>
+      <div class="itv3-ev">Comida</div>
     </div>
 
   </div>
@@ -3436,15 +3481,15 @@ section#rsvp{
         <svg class="ls-svg" viewBox="0 0 260 200" preserveAspectRatio="none" aria-hidden="true">
           <defs>
             <linearGradient id="lsPaper" x1="0" y1="1" x2="1" y2="0">
-              <stop offset="0%" stop-color="#F0ECDA"/><stop offset="100%" stop-color="#FAF7EC"/>
+              <stop offset="0%" stop-color="#F0ECDA"/><stop offset="100%" stop-color="#F6F3EA"/>
             </linearGradient>
             <linearGradient id="lsGoldLine" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#7C7247"/><stop offset="50%" stop-color="#D9CFA6"/><stop offset="100%" stop-color="#7C7247"/>
+              <stop offset="0%" stop-color="#9A7B45"/><stop offset="50%" stop-color="#E4D3A9"/><stop offset="100%" stop-color="#9A7B45"/>
             </linearGradient>
           </defs>
           <rect x="18" y="52" width="224" height="132" rx="8" fill="url(#lsPaper)" stroke="url(#lsGoldLine)" stroke-width="1.6"/>
-          <rect x="24" y="58" width="212" height="120" rx="5" fill="none" stroke="#B3A46E" stroke-width=".7" opacity=".55"/>
-          <path d="M18 184 L130 110 L242 184" stroke="#B3A46E" stroke-width="1.1" fill="none" opacity=".75"/>
+          <rect x="24" y="58" width="212" height="120" rx="5" fill="none" stroke="#C9A96A" stroke-width=".7" opacity=".55"/>
+          <path d="M18 184 L130 110 L242 184" stroke="#C9A96A" stroke-width="1.1" fill="none" opacity=".75"/>
         </svg>
         <div class="ls-flap" aria-hidden="true">
           <svg viewBox="0 0 224 86" preserveAspectRatio="none">
@@ -3453,15 +3498,15 @@ section#rsvp{
                 <stop offset="0%" stop-color="#F0ECDA"/><stop offset="100%" stop-color="#FFFFFF"/>
               </linearGradient>
             </defs>
-            <path d="M0 0 L112 86 L224 0 Z" fill="url(#lsFlapG)" stroke="#7C7247" stroke-width="1.6" stroke-linejoin="round"/>
-            <path d="M7 3 L112 81 L217 3" fill="none" stroke="#B3A46E" stroke-width=".7" opacity=".6"/>
+            <path d="M0 0 L112 86 L224 0 Z" fill="url(#lsFlapG)" stroke="#9A7B45" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M7 3 L112 81 L217 3" fill="none" stroke="#C9A96A" stroke-width=".7" opacity=".6"/>
           </svg>
         </div>
         <!-- Sello: iniciales en el único <text> -->
         <svg class="ls-seal" viewBox="0 0 60 60" aria-hidden="true">
-          <circle cx="30" cy="30" r="28" fill="#5E7350"/>
-          <circle cx="30" cy="30" r="28" fill="none" stroke="#B3A46E" stroke-width="1.6"/>
-          <circle cx="30" cy="30" r="21.5" fill="none" stroke="#D9CFA6" stroke-width="1" opacity=".85"/>
+          <circle cx="30" cy="30" r="28" fill="#5F6F56"/>
+          <circle cx="30" cy="30" r="28" fill="none" stroke="#C9A96A" stroke-width="1.6"/>
+          <circle cx="30" cy="30" r="21.5" fill="none" stroke="#E4D3A9" stroke-width="1" opacity=".85"/>
           <text x="30.4" y="34.2" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-weight="600" font-size="11.5" letter-spacing=".6" fill="#F0ECDA">ANDY</text>
         </svg>
       </div>
@@ -3478,10 +3523,57 @@ section#rsvp{
         <rect x="20" y="28" width="12" height="2.5" rx="1.25" fill="currentColor" stroke="none" opacity=".4"/>
       </svg>
       <p class="ls-msg-title">Tu presencia es mi mejor regalo</p>
-      <p class="ls-msg-desc">Muy pronto compartiremos aquí los detalles de la mesa de regalos.</p>
+      <p class="ls-msg-desc">Si deseas obsequiarme algo, encontrarás mi mesa de regalos en El Palacio de Hierro.</p>
+    </div>
+  </div>
+
+  <div class="ph-card">
+    <span class="ph-sheen" aria-hidden="true"></span>
+    <p class="ph-kicker">Mesa de regalos</p>
+    <p class="ph-store">El Palacio de Hierro</p>
+    <p class="ph-lbl">Número de evento</p>
+    <button class="ph-code" type="button" onclick="copyVal('phEvento','Número de evento')" aria-label="Copiar número de evento">
+      <span id="phEvento">5004672</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+    </button>
+    <a class="btn ph-btn" href="https://www.elpalaciodehierro.com/listaregalos" target="_blank" rel="noopener">Ver mesa de regalos</a>
+  </div>
+</section>
+
+<!-- ═══════════════ HOSPEDAJE ═══════════════ -->
+<section id="hospedaje" data-nav="Hospedaje" class="ink-host">
+  <div class="ink-bg bgn ink-d" aria-hidden="true"><i style="background-image:url(bg/countdown.webp)"></i></div>
+  <span class="lbl">Para tu comodidad</span>
+  <h2 class="ttl">Hospedaje</h2>
+  <div class="gline"></div>
+  <p class="ht-sub">Si vienes de fuera, te sugerimos este hotel con tarifa especial para la familia.</p>
+
+  <div class="ht-card">
+    <div class="ht-photos" id="htPhotos">
+      <img class="on" src="assets/hotel/fachada.jpg" alt="Fachada del hotel Fiesta Inn Morelia Altozano">
+      <img src="assets/hotel/lobby.jpg" alt="Lobby del hotel Fiesta Inn Morelia Altozano">
+      <img src="assets/hotel/alberca.jpg" alt="Alberca del hotel Fiesta Inn Morelia Altozano">
+      <div class="ht-dots" role="tablist" aria-label="Fotos del hotel">
+        <button type="button" class="on" aria-label="Foto 1"></button><button type="button" aria-label="Foto 2"></button><button type="button" aria-label="Foto 3"></button>
+      </div>
+    </div>
+    <div class="ht-body">
+      <p class="ht-name">Fiesta Inn Morelia Altozano</p>
+      <p class="ht-addr">Av. Montaña Monarca Norte 1000, Centro Comercial Altozano, Morelia, Mich.</p>
+      <div class="ht-promo">
+        <p class="ht-promo-lbl">Código promocional</p>
+        <p class="ht-promo-sub">Ocupación sencilla o doble</p>
+        <button class="ht-code" type="button" onclick="copyVal('htCodigo','Código')" aria-label="Copiar código promocional">
+          <span id="htCodigo">CUS047609</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+        </button>
+      </div>
+      <div class="ht-btns">
+        <a class="btn" href="https://www.fiestamericanatravelty.com/fiesta-inn/hoteles/fiesta-inn-morelia-altozano" target="_blank" rel="noopener">Reservar</a>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Fiesta+Inn+Morelia+Altozano" target="_blank" rel="noopener"><svg class="pin-ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Ver ubicación</a>
+      </div>
     </div>
   </div>
 </section>
+
 
 
 <!-- ═══════════════ 8. ÁLBUM COMPARTIDO ══════════════ -->
@@ -3654,7 +3746,7 @@ section#rsvp{
   <span class="lbl">Confirmación de asistencia</span>
   <h2 class="ttl">Tu presencia lo significa todo</h2>
   <div class="gline"></div>
-  <p class="rsvp-text rsvp2-intro">Por favor confírmame tu asistencia. Me hará muy feliz saber que estarás conmigo en este día.</p>
+  <p class="rsvp-text rsvp2-intro">Por favor confírmame tu asistencia antes del <strong>5 de diciembre de 2026</strong>. Me hará muy feliz saber que estarás conmigo en este día.</p>
 
   <!-- Mensaje de niños (bautizo: son bienvenidos) -->
   <div class="rsvp-adults" id="rsvpAdults">
@@ -3666,15 +3758,15 @@ section#rsvp{
   </div>
 
   <div class="rsvp-card">
-    <svg class="rsvp-corner rsvp-corner--tl" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="#B3A46E" stroke-width="1"/><circle cx="2" cy="2" r="2.5" fill="#7C7247"/></svg>
-    <svg class="rsvp-corner rsvp-corner--tr" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="#B3A46E" stroke-width="1"/><circle cx="2" cy="2" r="2.5" fill="#7C7247"/></svg>
-    <svg class="rsvp-corner rsvp-corner--bl" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="#B3A46E" stroke-width="1"/><circle cx="2" cy="2" r="2.5" fill="#7C7247"/></svg>
-    <svg class="rsvp-corner rsvp-corner--br" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="#B3A46E" stroke-width="1"/><circle cx="2" cy="2" r="2.5" fill="#7C7247"/></svg>
+    <svg class="rsvp-corner rsvp-corner--tl" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="#C9A96A" stroke-width="1"/><circle cx="2" cy="2" r="2.5" fill="#9A7B45"/></svg>
+    <svg class="rsvp-corner rsvp-corner--tr" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="#C9A96A" stroke-width="1"/><circle cx="2" cy="2" r="2.5" fill="#9A7B45"/></svg>
+    <svg class="rsvp-corner rsvp-corner--bl" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="#C9A96A" stroke-width="1"/><circle cx="2" cy="2" r="2.5" fill="#9A7B45"/></svg>
+    <svg class="rsvp-corner rsvp-corner--br" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M2 50 L2 2 L50 2" stroke="#C9A96A" stroke-width="1"/><circle cx="2" cy="2" r="2.5" fill="#9A7B45"/></svg>
 
     <div class="rsvp-inner">
       <div class="rsvp-deadline">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5z"/></svg>
-        Fecha límite · por confirmar
+        Fecha límite · 5 de diciembre de 2026
       </div>
 
       <p class="rsvp-for" id="rsvp-for" style="display:none">Esta invitación es para</p>
@@ -4259,7 +4351,7 @@ function scrollAnims() {
 }
 
 /* ── COUNTDOWN ───────────────────────────────────────── */
-const WED = new Date('2027-02-06T14:00:00-06:00');
+const WED = new Date('2027-02-06T13:00:00-06:00');
 let prevS = '';
 const RING_C = 2 * Math.PI * 52;  // 326.73
 function pad(n) { return String(n).padStart(2,'0'); }
@@ -4659,7 +4751,7 @@ function showNav(){
 function initSectionFades(){
   var secs = Array.prototype.slice.call(document.querySelectorAll('.main-wrap > section, .main-wrap > footer'));
   var page = 'rgb(255,255,255)';
-  var SET = { hero: { bot: '#2C3125' }, invite: { top: '#FAF7EC', bot: '#F6F2EC' }, countdown: { top: '#FAF7EC', bot: '#F0ECDA' },
+  var SET = { hero: { bot: '#2C3125' }, invite: { top: '#F6F3EA', bot: '#F6F2EC' }, countdown: { top: '#F6F3EA', bot: '#F0ECDA' },
               itinerary: { top: '#FFFFFF', bot: '#FFFFFF' }, footer: { top: '#1F241A', bot: '#1F241A' } };
   function rgb(c){
     if (!c) return null;
@@ -4775,7 +4867,7 @@ function capaDeVida(){
 function confeti(){
   if (window.__RM) return;
   var layer = document.createElement('div'); layer.className = 'confetti-layer'; document.body.appendChild(layer);
-  var cols = ['#5E7350', '#8FA878', '#D4C5B2', '#F0ECDA', '#B3A46E', '#FFFFFF'];
+  var cols = ['#5F6F56', '#8FA77F', '#D7C9B3', '#F0ECDA', '#C9A96A', '#FFFFFF'];
   var W = innerWidth, H = innerHeight, N = 34;
   for (var i = 0; i < N; i++) {
     var p = document.createElement('i'), sz = 6 + Math.random() * 7;
@@ -4796,8 +4888,7 @@ function confeti(){
   var RM = window.__RM;
   var PANEL_API = 'https://panel-invitados.vercel.app/api/confirmar';
   var RSVP_URL = 'https://bautizo-andres-matias-gonzalez-estrada.vercel.app';
-  /* PENDIENTE: el cliente no ha dado fecha límite. Por ahora se cierra la víspera del evento. */
-  var DEADLINE = new Date('2027-02-05T23:59:59-06:00');
+  var DEADLINE = new Date('2026-12-05T23:59:59-06:00');   /* 5 dic 2026, hora de Morelia */
   var frozen = Date.now() > DEADLINE.getTime();
   var ERR = '#9a3a26';
   function decodeInvite(tok){ try{ var b64 = tok.replace(/-/g,'+').replace(/_/g,'/'); while (b64.length % 4) b64 += '='; var bin = atob(b64), bytes = new Uint8Array(bin.length);
@@ -5224,9 +5315,9 @@ function confeti(){
     var SVG_NS = 'http://www.w3.org/2000/svg';
     /* sobre premium crema, borde y solapa champán, mini-sello olivo */
     var DROP_SVG =
-      '<rect x="1" y="1" width="32" height="22" rx="2.5" fill="#FAF7EC" stroke="#B3A46E" stroke-width="1.1"/>' +
-      '<path d="M1.6 1.6 L17 13 L32.4 1.6" fill="none" stroke="#B3A46E" stroke-width="1.1" stroke-linejoin="round"/>' +
-      '<circle cx="17" cy="13" r="3.3" fill="#5E7350" stroke="#D9CFA6" stroke-width=".6"/>';
+      '<rect x="1" y="1" width="32" height="22" rx="2.5" fill="#F6F3EA" stroke="#C9A96A" stroke-width="1.1"/>' +
+      '<path d="M1.6 1.6 L17 13 L32.4 1.6" fill="none" stroke="#C9A96A" stroke-width="1.1" stroke-linejoin="round"/>' +
+      '<circle cx="17" cy="13" r="3.3" fill="#5F6F56" stroke="#E4D3A9" stroke-width=".6"/>';
 
     function rand(a,b){ return a + Math.random()*(b-a); }
     function pickDepth(){ var r = Math.random(); return r < .45 ? 0 : (r < .8 ? 1 : 2); }
@@ -5493,6 +5584,19 @@ function confeti(){
 })();
 </script>
 <script>
+/* ── Hospedaje: fotos que se alternan (toque, swipe y automático) ── */
+(function(){
+  var box = document.getElementById('htPhotos'); if (!box) return;
+  var imgs = box.querySelectorAll('img'), dots = box.querySelectorAll('.ht-dots button'), i = 0, t, x0 = null;
+  function go(n){ i = (n + imgs.length) % imgs.length; imgs.forEach(function(im, k){ im.classList.toggle('on', k === i); }); dots.forEach(function(d, k){ d.classList.toggle('on', k === i); }); }
+  dots.forEach(function(d, k){ d.addEventListener('click', function(){ go(k); restart(); }); });
+  box.addEventListener('touchstart', function(e){ x0 = e.touches[0].clientX; }, { passive: true });
+  box.addEventListener('touchend', function(e){ if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) { go(i + (dx < 0 ? 1 : -1)); restart(); } x0 = null; }, { passive: true });
+  function restart(){ clearInterval(t); if (!matchMedia('(prefers-reduced-motion: reduce)').matches) t = setInterval(function(){ go(i + 1); }, 4500); }
+  restart();
+})();
+</script>
+<script>
 /* ELYSIUM AUDIO v2 — el invitado entra y escucha la cancion.
    - Primer gesto (sobre, idioma, boton, cualquier toque): la cancion arranca SI O SI.
      Si el boton de musica de la plantilla la pausa en ese mismo toque, se reanuda.
@@ -5500,7 +5604,7 @@ function confeti(){
    - Si el archivo de la cancion falla (404, host caido, HTML en vez de mp3) se usa una de respaldo. */
 (function(){
   if(window.__elyAudio2) return; window.__elyAudio2=1;
-  var FALLBACK='https://boda-isaac-y-claudia.vercel.app/cancion.mp3';
+  var FALLBACK='/cancion.mp3';
   var forced=false, gestured=false;
   function A(){ return document.querySelector('audio'); }
   function toFallback(a){
