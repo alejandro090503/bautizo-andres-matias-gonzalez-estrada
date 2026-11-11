@@ -3116,6 +3116,46 @@ section#rsvp{
 .ht-btns{display:flex;flex-direction:column;gap:10px;margin-top:16px}
 .ht-btns .btn{margin:0}
 @media (prefers-reduced-motion:reduce){.ph-card,.ht-card{animation:none}.ph-sheen{display:none}}
+
+/* ═════ FUNDIDO UNIFORME ENTRE SECCIONES + SÍMBOLOS (cruces/palomas) SIN TAPAR ═════ */
+.main-wrap > section:not(#hero){background:#F6F3EA!important;border-top:0!important;border-bottom:0!important}
+#footer{border:0!important}
+.sec-wave,.corner{display:none!important}
+.ink-bg.bgn{-webkit-mask-image:linear-gradient(transparent 0,#000 110px,#000 calc(100% - 110px),transparent)!important;
+          mask-image:linear-gradient(transparent 0,#000 110px,#000 calc(100% - 110px),transparent)!important}
+/* portada: la foto se funde al crema de la siguiente sección */
+.hero-fade{position:absolute;left:0;right:0;bottom:0;height:150px;z-index:2;pointer-events:none;
+  background:linear-gradient(to bottom,rgba(246,243,234,0) 0%,rgba(246,243,234,.03) 12.5%,rgba(246,243,234,.1) 25%,rgba(246,243,234,.22) 37.5%,rgba(246,243,234,.5) 50%,rgba(246,243,234,.78) 62.5%,rgba(246,243,234,.9) 75%,rgba(246,243,234,.97) 87.5%,#F6F3EA 100%)}
+#hero .h-scroll span{color:#5F6F56!important}
+#hero .h-scroll-line{background:linear-gradient(to bottom,#9A7B45,transparent)!important}
+/* secciones con cruz/paloma arriba: el fondo va a escala fija y el contenido empieza debajo del símbolo */
+#location .ink-bg.bgn,#itinerary .ink-bg.bgn,#padrinos .ink-bg.bgn,#rsvp .ink-bg.bgn,#footer .ink-bg.bgn{inset:0 -2% auto -2%!important;height:auto!important;
+  -webkit-mask-image:none!important;mask-image:none!important}
+#location .ink-bg.bgn > i,#itinerary .ink-bg.bgn > i,#padrinos .ink-bg.bgn > i,#rsvp .ink-bg.bgn > i,#footer .ink-bg.bgn > i{position:relative!important;inset:auto!important;display:block;width:100%;height:0;padding-bottom:179.2%;
+  background-size:100% auto!important;background-position:center top!important;
+  -webkit-mask-image:linear-gradient(transparent 0,#000 60px,#000 72%,transparent 100%);mask-image:linear-gradient(transparent 0,#000 60px,#000 72%,transparent 100%)}
+#location,#itinerary,#padrinos,#rsvp{padding-top:225px!important}
+#footer{padding-top:220px!important}
+#location .sec-medal,#itinerary .sec-medal,#padrinos .sec-medal,#rsvp .sec-medal,#footer .sec-medal,#location .wind-orn,#itinerary .wind-orn,#padrinos .wind-orn,#rsvp .wind-orn,#footer .wind-orn{display:none!important}
+
+/* ═════ AJUSTE DE FRONTERAS ═════ */
+#hero .h-frame{display:none!important}
+.main-wrap > section:not(#location):not(#itinerary):not(#padrinos):not(#rsvp) .ink-bg.bgn{
+  -webkit-mask-image:linear-gradient(transparent 0,rgba(0,0,0,.03) 25px,rgba(0,0,0,.12) 55px,rgba(0,0,0,.3) 85px,rgba(0,0,0,.55) 115px,rgba(0,0,0,.8) 145px,rgba(0,0,0,.95) 170px,#000 190px,#000 calc(100% - 190px),rgba(0,0,0,.95) calc(100% - 170px),rgba(0,0,0,.8) calc(100% - 145px),rgba(0,0,0,.55) calc(100% - 115px),rgba(0,0,0,.3) calc(100% - 85px),rgba(0,0,0,.12) calc(100% - 55px),rgba(0,0,0,.03) calc(100% - 25px),transparent 100%)!important;
+          mask-image:linear-gradient(transparent 0,rgba(0,0,0,.03) 25px,rgba(0,0,0,.12) 55px,rgba(0,0,0,.3) 85px,rgba(0,0,0,.55) 115px,rgba(0,0,0,.8) 145px,rgba(0,0,0,.95) 170px,#000 190px,#000 calc(100% - 190px),rgba(0,0,0,.95) calc(100% - 170px),rgba(0,0,0,.8) calc(100% - 145px),rgba(0,0,0,.55) calc(100% - 115px),rgba(0,0,0,.3) calc(100% - 85px),rgba(0,0,0,.12) calc(100% - 55px),rgba(0,0,0,.03) calc(100% - 25px),transparent 100%)!important}
+/* crema → oscuro: toda la transición ocurre dentro del pie, por encima de su fondo */
+.main-wrap > section:not(#location):not(#itinerary):not(#padrinos):not(#rsvp) .ink-bg.bgn{top:0!important;bottom:0!important;left:-3%!important;right:-3%!important}
+#footer .ink-bg.bgn{top:170px!important}
+#location .ink-bg.bgn,#itinerary .ink-bg.bgn,#padrinos .ink-bg.bgn,#rsvp .ink-bg.bgn{top:30px!important}
+#location .ink-bg.bgn > i,#itinerary .ink-bg.bgn > i,#padrinos .ink-bg.bgn > i,#rsvp .ink-bg.bgn > i{
+  -webkit-mask-image:linear-gradient(transparent 0,rgba(0,0,0,.04) 20px,rgba(0,0,0,.14) 45px,rgba(0,0,0,.32) 70px,rgba(0,0,0,.56) 95px,rgba(0,0,0,.8) 120px,rgba(0,0,0,.95) 145px,#000 165px,#000 70%,rgba(0,0,0,.6) 82%,rgba(0,0,0,.2) 92%,transparent 100%)!important;mask-image:linear-gradient(transparent 0,rgba(0,0,0,.04) 20px,rgba(0,0,0,.14) 45px,rgba(0,0,0,.32) 70px,rgba(0,0,0,.56) 95px,rgba(0,0,0,.8) 120px,rgba(0,0,0,.95) 145px,#000 165px,#000 70%,rgba(0,0,0,.6) 82%,rgba(0,0,0,.2) 92%,transparent 100%)!important}
+#location,#itinerary,#padrinos,#rsvp{padding-top:290px!important}
+.footer-fade{position:absolute;left:0;right:0;top:0;height:300px;z-index:0;pointer-events:none;background:linear-gradient(to bottom,rgba(246,243,234,1.000) 0.0%,rgba(246,243,234,0.957) 12.5%,rgba(246,243,234,0.844) 25.0%,rgba(246,243,234,0.684) 37.5%,rgba(246,243,234,0.500) 50.0%,rgba(246,243,234,0.316) 62.5%,rgba(246,243,234,0.156) 75.0%,rgba(246,243,234,0.043) 87.5%,rgba(246,243,234,0.000) 100.0%)}
+#footer{padding-top:400px!important}
+#footer > *:not(.footer-fade):not(.ink-bg):not(.sf){position:relative;z-index:1}
+#footer .sf{display:none!important}
+#rsvp .sf-bot{display:none!important}
+.cd-wave-top,.cd-wave-bot{display:none!important}
   </style>
 </head>
 <body>
@@ -3195,6 +3235,7 @@ section#rsvp{
   <div class="hero-lens" aria-hidden="true"><b></b></div>
   <div class="hero-dust" aria-hidden="true"><i style="left:45%;--d:-13.3s;--t:13.8s;--s:2px;--o:0.33"></i><i style="left:72%;--d:-1.3s;--t:15.1s;--s:3px;--o:0.31"></i><i style="left:59%;--d:-5.9s;--t:12.7s;--s:4px;--o:0.32"></i><i style="left:76%;--d:-1.7s;--t:12.6s;--s:2px;--o:0.53"></i><i style="left:54%;--d:-0.7s;--t:12.5s;--s:3px;--o:0.42"></i><i style="left:22%;--d:-7.6s;--t:15.0s;--s:3px;--o:0.34"></i><i style="left:77%;--d:-8.9s;--t:13.6s;--s:2px;--o:0.53"></i><i style="left:83%;--d:-2.9s;--t:15.8s;--s:4px;--o:0.61"></i><i style="left:63%;--d:-8.2s;--t:14.2s;--s:3px;--o:0.40"></i><i style="left:27%;--d:-9.8s;--t:12.7s;--s:3px;--o:0.51"></i><i style="left:47%;--d:-10.2s;--t:13.0s;--s:2px;--o:0.35"></i><i style="left:57%;--d:-2.3s;--t:13.4s;--s:4px;--o:0.47"></i><i style="left:89%;--d:-1.1s;--t:14.9s;--s:3px;--o:0.44"></i><i style="left:48%;--d:-8.3s;--t:15.1s;--s:4px;--o:0.33"></i><i style="left:15%;--d:-13.2s;--t:14.3s;--s:2px;--o:0.32"></i><i style="left:93%;--d:-4.3s;--t:15.0s;--s:4px;--o:0.41"></i></div>
   <div class="hero-vig" aria-hidden="true"></div>
+  <div class="hero-fade" aria-hidden="true"></div>
   <div class="h-ov"></div>
   <div class="h-frame"></div>
 
@@ -3811,6 +3852,7 @@ section#rsvp{
 
 <!-- ═══════════════ 13. FOOTER ═══════════════════════ -->
 <footer id="footer" class="ink-host">
+  <div class="footer-fade" aria-hidden="true"></div>
   <div class="ink-bg bgn ink-a" aria-hidden="true"><i style="background-image:url(bg/footer.webp)"></i></div>
   <div class="ft-orn">✦ · ✦ · ✦</div>
   <div class="ft-nms">Andrés Matías</div>
@@ -4750,8 +4792,8 @@ function showNav(){
 function initSectionFades(){
   var secs = Array.prototype.slice.call(document.querySelectorAll('.main-wrap > section, .main-wrap > footer'));
   var page = 'rgb(255,255,255)';
-  var SET = { hero: { bot: '#2C3125' }, invite: { top: '#F6F3EA', bot: '#F6F2EC' }, countdown: { top: '#F6F3EA', bot: '#F0ECDA' },
-              itinerary: { top: '#FFFFFF', bot: '#FFFFFF' }, footer: { top: '#1F241A', bot: '#1F241A' } };
+  var SET = { hero: { bot: '#F6F3EA' }, invite: { top: '#F6F3EA', bot: '#F6F3EA' }, countdown: { top: '#F6F3EA', bot: '#F6F3EA' },
+              itinerary: { top: '#F6F3EA', bot: '#F6F3EA' }, footer: { top: '#1F241A', bot: '#1F241A' } };
   function rgb(c){
     if (!c) return null;
     if (c[0] === '#') { var n = parseInt(c.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
