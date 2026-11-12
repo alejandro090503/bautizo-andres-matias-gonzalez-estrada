@@ -29,7 +29,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Great+Vibes&family=Italianno&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Great+Vibes&family=Pinyon+Script&family=Italianno&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
 /* ── TOKENS ───────────────────────────────────────────── */
 :root {
@@ -2987,7 +2987,7 @@ section#rsvp{
 .main-wrap{overflow-x:clip}
 #footer{padding-bottom:120px!important}
 /* portada: marco de tinta con el centro descubierto · solo el nombre */
-.hero-drift{background:#2C3125 url(assets/fotos/hero.jpg) 50% 4%/cover no-repeat;animation-name:heroDriftFoto;transform-origin:50% 22%}
+.hero-drift{background:#2C3125 url(assets/fotos/hero.jpg) 50% 20%/cover no-repeat;animation-name:heroDriftFoto;transform-origin:50% 22%}
 @keyframes heroDriftFoto{0%{transform:translate3d(-2%,0,0) scale(1.04)}50%{transform:translate3d(1.5%,1%,0) scale(1.1)}100%{transform:translate3d(3%,2%,0) scale(1.16)}}
 @keyframes heroDriftOval{0%{transform:translate3d(-1%,-.8%,0) scale(1.03)}100%{transform:translate3d(1.2%,1%,0) scale(1.09)}}
 .hero-bg{inset:0 0 -14% 0}
@@ -3156,6 +3156,50 @@ section#rsvp{
 #footer .sf{display:none!important}
 #rsvp .sf-bot{display:none!important}
 .cd-wave-top,.cd-wave-bot{display:none!important}
+
+/* ═════ CORRECCIONES DE LA CLIENTA (12 nov) ═════ */
+/* portada: nombre en cursiva elegante, sin destello */
+#hero .h-name{font-family:'Pinyon Script',cursive!important;text-transform:none!important;letter-spacing:0!important;font-weight:400!important;font-size:clamp(58px,17vw,74px)!important;line-height:1.25}
+#hero .h-clip{padding:0}
+#hero .h-name-wrap + .h-name-wrap{margin-top:-14px}
+#hero .h-amp-clip{display:none!important}
+/* horas en números normales (no estilo romano) */
+.loc-time-big,.itv3-time,.cd-num,#countdown .cd-num{font-family:'Playfair Display',Georgia,serif!important;font-variant-numeric:lining-nums tabular-nums;font-weight:500!important;letter-spacing:.02em!important}
+.itv3-time{letter-spacing:.06em!important;text-indent:0!important}
+.loc-time-big small{font-family:'Playfair Display',Georgia,serif}
+/* invitación: detalles olivo y fecha */
+#invite .inv-wrap{position:relative;padding:34px 22px 30px;border-radius:26px;
+  background:linear-gradient(180deg,rgba(214,224,210,.55),rgba(183,195,169,.28));border:1px solid rgba(95,111,86,.28);
+  box-shadow:0 22px 48px -30px rgba(95,111,86,.6)}
+#invite .inv-wrap::before{content:'';position:absolute;inset:8px;border:1px solid rgba(201,169,106,.45);border-radius:20px;pointer-events:none}
+#invite .inv-orn{color:#5F6F56;opacity:1}
+#invite .inv-quote{color:#5F6F56}
+.inv-fecha{margin-top:34px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.inv-fecha-dia{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:13px;letter-spacing:.3em;padding-left:.3em;text-transform:uppercase;color:#5F6F56}
+#invite .inv-date{font-family:'Pinyon Script',cursive!important;font-style:normal!important;font-weight:400!important;font-size:clamp(28px,8.4vw,38px)!important;letter-spacing:0!important;color:#3A412A!important;margin-top:0!important;line-height:1.35;white-space:nowrap}
+#invite .inv-date::before,#invite .inv-date::after{display:none}
+/* lugares: detalles olivo */
+#location .loc-card{background:linear-gradient(180deg,#fff 0%,rgba(214,224,210,.55) 100%)!important;border:1px solid rgba(95,111,86,.32)!important}
+#location .loc-card::before{background:linear-gradient(90deg,transparent,#5F6F56,transparent)!important;opacity:1!important;height:2px!important}
+#location .loc-type{display:inline-block;background:#5F6F56;color:#F6F3EA!important;padding:8px 16px 8px calc(16px + 4px);border-radius:999px;letter-spacing:3px!important}
+#location .loc-time-big{color:#5F6F56!important}
+#location .loc-time-tag{color:#8FA77F!important}
+/* cuenta regresiva y guardar fecha: detalles olivo */
+#countdown .cd-unit{background:linear-gradient(170deg,#8FA77F 0%,#5F6F56 100%)!important;border:1px solid rgba(201,169,106,.55)!important;
+  box-shadow:0 16px 30px -16px rgba(58,65,42,.6),inset 0 1px 0 rgba(255,255,255,.25)!important}
+#countdown .cd-num{color:#FFFBEF!important;text-shadow:0 1px 2px rgba(0,0,0,.18)}
+#countdown .cd-lbl{color:#F1EBDA!important;opacity:1!important}
+#countdown .cd-sep{color:#5F6F56!important;opacity:.8!important}
+.cal-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:360px;margin:6px auto 0}
+.cal-opt{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:84px;padding:12px 8px;border-radius:18px;
+  background:linear-gradient(170deg,#8FA77F,#5F6F56);color:#FFFBEF;text-decoration:none;box-shadow:0 12px 26px -14px rgba(58,65,42,.65);border:1px solid rgba(201,169,106,.5)}
+.cal-opt span{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:16px;line-height:1.2;text-align:center}
+.cal-opt small{display:block;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;font-weight:500;font-size:12px;letter-spacing:.08em;opacity:.9;margin-top:2px}
+.cal-opt:active{transform:scale(.97)}
+/* vestimenta: dibujos más grandes */
+#dresscode .dc2-stage{height:340px}
+#dresscode .dc2-fig img{height:330px}
+#dresscode .dc2-figs{max-width:400px;margin-bottom:10px}
   </style>
 </head>
 <body>
@@ -3277,7 +3321,6 @@ section#rsvp{
       </div>
       <span class="h-name-wind-line"></span>
     </div>
-    <div class="h-amp-clip"><span class="h-amp h-amp-sm" id="hAmp">✦</span></div>
     <div class="h-name-wrap">
       <span class="h-name-wind-line"></span>
       <div class="h-clip">
@@ -3311,8 +3354,8 @@ section#rsvp{
     <p class="inv-children">Andrés Matías</p>
     <p class="inv-surname">González Estrada</p>
     <div class="gline" style="margin:24px auto"></div>
-    <p class="inv-quote">Con mucha alegría te invito a acompañarme el día en que recibiré el Sacramento del Bautismo.</p>
-    <p class="inv-date">el 6 de Febrero de 2027</p>
+    <p class="inv-quote">Con mucha alegría y cariño te invito a celebrar conmigo el día que recibiré el sagrado sacramento del bautismo.</p>
+    <div class="inv-fecha"><span class="inv-fecha-dia">Sábado</span><p class="inv-date">6 de febrero de 2027</p></div>
   </div>
 </section>
 
@@ -3440,12 +3483,10 @@ section#rsvp{
   <h2 class="ttl" style="font-size:26px">Guarda la Fecha</h2>
   <div class="gline"></div>
   <p class="cal-sub">Agrega mi bautizo a tu calendario<br>para no perderte ni un momento.</p>
-  <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bautizo+de+Andr%C3%A9s+Mat%C3%ADas&dates=20270206T130000/20270206T200000&ctz=America/Mexico_City&details=Misa+y+ceremonia+1:00+PM+%7C+Recepci%C3%B3n+2:00+PM+%7C+Comida+3:00+PM+%7C+Jard%C3%ADn+de+Eventos+Santa+Sof%C3%ADa&location=Jard%C3%ADn+de+Eventos+Santa+Sof%C3%ADa%2C+Morelia%2C+Michoac%C3%A1n"
-     target="_blank" rel="noopener" id="calBtn"
-     class="btn btn-olive" style="max-width:340px;margin:0 auto;display:flex;padding:18px 24px;font-size:15px;font-weight:400;letter-spacing:1px;border-radius:50px;box-shadow:0 6px 28px rgba(117,140,98,.35);animation:calPulse 2.5s ease-in-out infinite">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-    Guardar la Fecha
-  </a>
+  <div class="cal-opts" id="calBtn">
+    <a class="cal-opt" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bautizo+de+Andr%C3%A9s+Mat%C3%ADas&dates=20270206T130000/20270206T200000&ctz=America/Mexico_City&details=Misa+y+ceremonia+1:00+PM+%7C+Recepci%C3%B3n+2:00+PM+%7C+Comida+3:00+PM+%7C+M%C3%BAsica+en+vivo+4:00+PM+%7C+Jard%C3%ADn+de+Eventos+Santa+Sof%C3%ADa&location=Jard%C3%ADn+de+Eventos+Santa+Sof%C3%ADa%2C+Morelia%2C+Michoac%C3%A1n" target="_blank" rel="noopener"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Google Calendar<small>Android</small></span></a>
+    <a class="cal-opt" href="/bautizo-andres-matias.ics" download="Bautizo Andrés Matías.ics"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Calendario Apple<small>iPhone</small></span></a>
+  </div>
 </section>
 
 
@@ -3453,7 +3494,7 @@ section#rsvp{
 <section id="itinerary" data-nav="Itinerario" class="ink-host">
   <div class="ink-bg bgn ink-c" aria-hidden="true"><i style="background-image:url(bg/itinerary.webp)"></i></div>
   <span class="lbl">Un día para celebrar</span>
-  <h2 class="ttl">Itinerario</h2>
+  <h2 class="ttl">Itinerario del evento</h2>
   <div class="gline"></div>
   <div class="itv3">
     <div class="itv3-track"></div>
@@ -3475,6 +3516,12 @@ section#rsvp{
       <div class="itv3-gem"></div>
       <div class="itv3-time">3:00 PM</div>
       <div class="itv3-ev">Comida</div>
+    </div>
+
+    <div class="itv3-item">
+      <div class="itv3-gem itv3-gem-beige"></div>
+      <div class="itv3-time">4:00 PM</div>
+      <div class="itv3-ev">Música en vivo y aperitivos</div>
     </div>
 
   </div>
@@ -3580,12 +3627,12 @@ section#rsvp{
 </section>
 
 <!-- ═══════════════ HOSPEDAJE ═══════════════ -->
-<section id="hospedaje" data-nav="Hospedaje" class="ink-host">
+<section id="hospedaje" data-nav="Sugerencia de hospedaje" class="ink-host">
   <div class="ink-bg bgn ink-d" aria-hidden="true"><i style="background-image:url(bg/countdown.webp)"></i></div>
   <span class="lbl">Para tu comodidad</span>
-  <h2 class="ttl">Hospedaje</h2>
+  <h2 class="ttl">Sugerencia de hospedaje</h2>
   <div class="gline"></div>
-  <p class="ht-sub">Si vienes de fuera, te sugerimos este hotel con tarifa especial para la familia.</p>
+  <p class="ht-sub">Si vienes de fuera, te sugerimos este hotel cerca del evento con una tarifa especial para nuestros invitados.</p>
 
   <div class="ht-card">
     <div class="ht-photos" id="htPhotos">
@@ -3661,7 +3708,6 @@ section#rsvp{
   <div class="gline"></div>
 
   <p class="dc2-code">Cocktail</p>
-  <p class="dc2-note">Ayúdanos a crear un ambiente especial<br>vistiéndote acorde a la ocasión.</p>
 
   <!-- Dibujos: 2 columnas, sin tarjetas -->
   <div class="dc2-figs">
@@ -3678,7 +3724,7 @@ section#rsvp{
     <figure class="dc2-fig">
       <div class="dc2-stage">
         <span class="dc2-shadow" aria-hidden="true"></span>
-        <img src="assets/dama.png" alt="Dama con vestido de cóctel" width="248" height="604" decoding="async">
+        <img src="assets/dama-floral.png" alt="Dama con vestido de cóctel floreado" width="278" height="820" decoding="async">
       </div>
       <figcaption>
         <span class="dc2-fig-ttl">Damas</span>
@@ -3690,16 +3736,6 @@ section#rsvp{
   <!-- Colores: UNA bolita por color, en rejilla.
        Para agregar colores edita data-colors: [{"hex":"#RRGGBB","name":"Nombre"}, ...]
        Sin colores se muestra el texto de data-empty (dato del cliente). -->
-  <div class="dcx">
-    <div class="dcx-group">
-      <p class="dcx-sub">Colores sugeridos</p>
-      <div class="dcx-grid" data-colors='[]' data-empty="Por confirmar"></div>
-    </div>
-    <div class="dcx-group">
-      <p class="dcx-sub">Colores a evitar</p>
-      <div class="dcx-grid" data-colors='[]' data-empty="Por confirmar"></div>
-    </div>
-  </div>
 </section>
 
 
@@ -3786,7 +3822,7 @@ section#rsvp{
   <span class="lbl">Confirmación de asistencia</span>
   <h2 class="ttl">Tu presencia lo significa todo</h2>
   <div class="gline"></div>
-  <p class="rsvp-text rsvp2-intro">Por favor confírmame tu asistencia antes del <strong>5 de diciembre de 2026</strong>. Me hará muy feliz saber que estarás conmigo en este día.</p>
+  <p class="rsvp-text rsvp2-intro">Por favor confírmame tu asistencia antes del <strong>20 de diciembre de 2026</strong>. Me hará muy feliz saber que estarás conmigo en este día.</p>
 
   <!-- Mensaje de niños (bautizo: son bienvenidos) -->
   <div class="rsvp-adults" id="rsvpAdults">
@@ -3794,6 +3830,7 @@ section#rsvp{
     <p class="rsvp-adults-lbl">✦  Niños bienvenidos  ✦</p>
     <p class="rsvp-adults-msg">
       Los más pequeños de la familia también están invitados a celebrar conmigo.
+      Para que puedas disfrutar del evento, se contará con servicio de niñeras.
     </p>
   </div>
 
@@ -3806,7 +3843,7 @@ section#rsvp{
     <div class="rsvp-inner">
       <div class="rsvp-deadline">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5z"/></svg>
-        Fecha límite · 5 de diciembre de 2026
+        Fecha límite · 20 de diciembre de 2026
       </div>
 
       <p class="rsvp-for" id="rsvp-for" style="display:none">Esta invitación es para</p>
@@ -4009,7 +4046,7 @@ window.addEventListener('scroll', () => {
 function heroAnim() {
   // Estados iniciales
   gsap.set(['#hWe','#hDiv','#hLine','#hDate','#hScroll'], { opacity: 0 });
-  gsap.set(['#hN1','#hN2','#hAmp'], {
+  gsap.set(['#hN1','#hN2'], {
     opacity: 0, y: -30, scale: 1.35,
     filter: 'blur(10px)', transformOrigin: 'center center'
   });
@@ -4042,7 +4079,7 @@ function heroAnim() {
     .to('#hWe',    { opacity: 1, duration: .7, ease: 'power2.out' }, .1)
     .to('#hDiv',   { opacity: 1, duration: .5, ease: 'power2.out' }, .3)
     .add(drop('#hN1', '#rip1'), .55)
-    .add(drop('#hAmp', '#rip1'), 1.15)
+
     .add(drop('#hN2', '#rip2'), 1.55)
     .to('#hLine',  { opacity: .7, duration: .6, ease: 'power2.out' }, 2.6)
     .to('#hDate',  { opacity: 1, duration: .7, ease: 'power2.out' }, 2.75)
@@ -4929,7 +4966,7 @@ function confeti(){
   var RM = window.__RM;
   var PANEL_API = 'https://panel-invitados.vercel.app/api/confirmar';
   var RSVP_URL = 'https://bautizo-andres-matias-gonzalez-estrada.vercel.app';
-  var DEADLINE = new Date('2026-12-05T23:59:59-06:00');   /* 5 dic 2026, hora de Morelia */
+  var DEADLINE = new Date('2026-12-20T23:59:59-06:00');   /* 20 dic 2026, hora de Morelia */
   var frozen = Date.now() > DEADLINE.getTime();
   var ERR = '#9a3a26';
   function decodeInvite(tok){ try{ var b64 = tok.replace(/-/g,'+').replace(/_/g,'/'); while (b64.length % 4) b64 += '='; var bin = atob(b64), bytes = new Uint8Array(bin.length);

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Elysium Invitaciones//Bautizo Andres Matias//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bautizo-andres-matias-20270206@elysium
+DTSTAMP:20261112T000000Z
+DTSTART:20270206T190000Z
+DTEND:20270207T020000Z
+SUMMARY:Bautizo de Andrés Matías
+DESCRIPTION:Misa y ceremonia 1:00 PM · Recepción 2:00 PM · Comida 3:00 PM · Música en vivo y aperitivos 4:00 PM
+https://bautizo-andres-matias-gonzalez-estrada.vercel.app
+LOCATION:Jardín de Eventos Santa Sofía\, Morelia\, Michoacán
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Mañana es el bautizo de Andrés Matías
+END:VALARM
+END:VEVENT
+END:VCALENDAR
